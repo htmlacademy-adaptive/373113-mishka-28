@@ -5,7 +5,7 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="body">
-    <div class="container">    
+    <div class="container">
       <!-- хедер  сверхним меню и логотипом -->
       <header class="header">
         <div class="header__logo logo">
@@ -23,7 +23,7 @@
               <a class="navigation__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="navigation navigation--dropdown list-reset "
+          <ul class="navigation navigation--dropdown list-reset ">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Поиск по сайту</a>
             </li>
@@ -43,7 +43,7 @@
 
         </ul>
         <span class="free-delivery">Бесплатная доставка по России</span>
-      
+
 
       <!-- секция презентация -->
         <section class="main-presentation">
@@ -78,11 +78,11 @@
             <div class="product-specification__row">
               <dt class="product-specification__parameter">Диаметр:</dt>
               <dd class="product-specification__property">25 см</dd>
-            </div>   
+            </div>
             <div class="product-specification__row">
               <dt class="product-specification__parameter">Высота:</dt>
               <dd class="product-specification__property">15 см</dd>
-            </div>  
+            </div>
           </dl>
           <div class="promo__image">
             <img src="#" alt="фото вязанной корзинки" width="260" height="315">
@@ -90,7 +90,7 @@
           <div class="promo__cost-order">
             <span class="promo__cost">Цена: 990 руб.</span>
             <button class="promo__button button button-order">ЗАКАЗАТЬ</button>
-          </div> 
+          </div>
         </section>
 
         <!-- секция "О нас" -->
@@ -110,74 +110,88 @@
         <!-- секция Отзывы -->
         <section class="reviews">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="review review-first">
-            <p class="review__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-              как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
+          <ul class="reviews__slider review">
 
-            <div class="review__author author-review">
-              <span class="author-review__name">Анастасия Красильникова</span>
-              <span class="author-review__email">@misssssiskras</span>
-            </div>
+            <li class="review__item review__item--active">
+
+              <p class="review__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                как у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+
+              <div class="review__author">
+                <span class="review__author-name">Анастасия Красильникова</span>
+                <span class="review__author-insta">@misssssiskras</span>
+              </div>
+            </li>
+
+            <li class="review__item">
+              <p class="review__text">
+                Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков,
+                как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+
+              <div class="review__author">
+                <span class="review__author-name">Екатерина Красильникова</span>
+                <span class="review__author-insta">@misssssiskras2</span>
+              </div>
+            </li>
+
+            <li class="review__item">
+              <p class="review__text">
+                Я двоюродная сестра молодой мамы,
+                но всё равно фотографии не набирали и близко такого количества лайков,
+                как у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными,
+                а также набирают больше лайков!
+              </p>
+
+              <div class="review__author">
+                <span class="review__author-name">Елена Красильникова</span>
+                <span class="review__author-insta">@misssssiskras3</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="reviews__control">
+            <button class="reviews__control reviews__control--prev" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__control reviews__control--next" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
           </div>
-
-          <div class="review review-second">
-            <p class="review__text">
-              Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков,
-              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-
-            <div class="review__author author-review">
-              <span class="author-review__name">Екатерина Красильникова</span>
-              <span class="author-review__email">@misssssiskras2</span>
-            </div>
-          </div>
-
-          <div class="review review-third">
-            <p class="review__text">
-              Я двоюродная сестра молодой мамы,
-              но всё равно фотографии не набирали и близко такого количества лайков,
-              как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными,
-              а также набирают больше лайков!
-            </p>
-
-            <div class="review__author author-review">
-              <span class="author-review__name">Елена Красильникова</span>
-              <span class="author-review__email">@misssssiskras3</span>
-            </div>
-          </div>
-          <div class="reviews__select-buttons select-button">
-            <button class="select-button__previous"></button>
-            <button class="select-button__next"></button>
-          </div>
-          <button class="buton button-feedback">Написать</button>
+          <button class="reviews__button buton">Написать</button>
         </section>
         <!--  -->
 
         <!-- секция контакты -->
         <section class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__table table-contacts">
-            <tr class="table-contacts__row">
-              <td class="table-contacts__parameter">e-mail:</td>
-              <td class="table-contacts__property">info@mimimishkashop.ru</td>
-            </tr>
-            <tr class="table-contacts__row">
-              <td class="table-contacts__parameter">адрес:</td>
-              <td class="table-contacts__property">г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101</td>
-            </tr>
-          </table>
-          <div class="address-map">
-            <img class="address-map__image" src="#" alt="карта района где находится магазин">
-            <svg class="address-map__point"></svg>
+          <div class="contacts__text">
+
+            <h2 class="contacts__title">Контакты</h2>
+            <dl class="contacts__list">
+              <div class="contacts__row">
+                <dt class="contacts__parameter">e-mail:</dt>
+                <dd class="contacts__property contacts__property--link">info@mimimishkashop.ru</dd>
+              </div>
+              <div class="contacts__row">
+                <dt class="contacts__parameter">адрес:</dt>
+                <dd class="contacts__property">г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101</dd>
+              </div>
+            </dl>
           </div>
-          <button class="button button-feedback">НАпишите нам</button>
+          <div class="contacts__map">
+            <iframe src="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <noscript>
+              <a class="contacts__map-link" href="#"></a>
+            </noscript>
+          </div>
+          <button class="contacts__button button">НАпишите нам</button>
         </section>
         <!--  -->
       </main>
@@ -187,19 +201,19 @@
         <!-- Секция соцсети -->
         <ul class="social-list list-reset ">
           <li class="social-list__item">
-            <a class="social-list__link" href="#" >
+            <a class="social-list__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВК</span>
               <svg class="social-list__icon"></svg>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#" >
+            <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
               <svg class="social-list__icon"></svg>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#" >
+            <a class="social-list__link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
               <svg class="social-list__icon"></svg>
             </a>
@@ -207,9 +221,15 @@
         </ul>
         <div class="developed">
           <h2 class="developed__title">Разработано</h2>
-          <svg class="developed__logo"></svg>
+          <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="academy-logo__icon" aria-hidden="true" focusable="false"
+            width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+            </svg>
+            <svg ></svg>
+          </a>
         </div>
-    
+
       </footer>
    </div>
   </body>
