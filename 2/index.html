@@ -8,15 +8,20 @@
   <body class="body">
 
       <!-- хедер  сверхним меню и логотипом -->
-      <header class="header">
-        <div class="header__logo logo">
-          <a class="logo__link" href="index.html" aria-current="page">
-            <img src="#" alt="логотип">
-          </a>
-      </div>
-        <nav class="navigation-header">
-          <button class="button-toggle"></button>
-          <ul class="navigation navigation--dropdown list-reset ">
+      <header class="header header--home">
+
+        <nav class="navigation">
+          <button class="button-toggle" type="button">
+            <span class="visually-hidden">Открыть/Закрыть меню</span>
+          </button>
+
+          <div class="navigation__logo-container">
+            <a class="logo" href="index.html" aria-current="page">
+              <img src="#" alt="Логотип" width="86" height="35">
+            </a>
+          </div>
+
+          <ul class="navigation__list navigation__list--main list-reset">
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -24,66 +29,84 @@
               <a class="navigation__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="navigation navigation--dropdown list-reset ">
+          <ul class="navigation__list navigation__list--user list-reset">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Поиск по сайту</a>
+              <a class="navigation__link navigation__link--icon navigation__link--search" href="#">
+                <span>Поиск по сайту</span>
+              </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Корзина: пока пуста</a>
+              <a class="navigation__link navigation__link--icon navigation__link--card" href="#">
+                <span>Корзина: пока пуста</span>
+              </a>
             </li>
           </ul>
+          <ul class="navigation__list navigation__link--promo list-reset">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Новые поступления</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Распродажа</a>
+            </li>
+
+          </ul>
+          <span class="navigation__text">Бесплатная доставка по России</span>
         </nav>
-        <ul class="navigation-bottom list-reset ">
-          <li class="navigation-bottom__item">
-            <a class="navigation-bottom__link" href="#">Новые поступления</a>
-          </li>
-
-          <li class="navigation-bottom__item">
-            <a class="navigation-bottom__link" href="#">Распродажа</a>
-          </li>
-
-        </ul>
-        <span class="free-delivery">Бесплатная доставка по России</span>
 
 
-      <!-- секция презентация -->
+
+        <!-- секция презентация -->
         <section class="main-presentation">
           <div class="main-presentation__container container">
-            <h1 class="main-presentation__title title title--main-page">Милые штуки ручной работы для дома</h1>
+            <h1 class="main-presentation__title title title--main">Милые штуки ручной работы для дома</h1>
             <ul class="main-presentation__menu product-list list-reset ">
               <li class="product-list__item">
-                <a class="product-list__link" href="#">Предметы интерьера</a>
+                <a class="product-list__link" href="#">
+                  <span>Предметы интерьера</span>
+                  <svg class="product-list__icon" aria-hidden="true" focusable="false"
+                  width="41" height="62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity=".5" fill="#149080">
+                      <path d="M15.502 37.756c-.306.994-.204 2.186 0 3.577.51 2.584 1.734 5.962 2.448 9.638h5.202c.714-3.577 1.938-6.955 2.55-9.638.305-1.39.305-2.682 0-3.577-.307-.894-.919-1.59-2.04-2.285h-6.12c-1.224.696-1.836 1.391-2.04 2.285ZM27.537 57.628H13.463c-1.326 0-2.346.994-2.346 2.186V62H29.883v-2.186c0-1.192-1.02-2.186-2.346-2.186ZM34.779 2.286H22.846C22.846 1.094 21.826.1 20.5.1s-2.346.994-2.346 2.186H6.221L0 27.622c.816-.496 1.632-.993 2.652-.993 1.428 0 2.244.795 2.957 1.39.714.597 1.224.796 1.428.796.306 0 .816-.298 1.53-.795.714-.497 1.632-1.391 2.958-1.391 1.326 0 2.244.795 2.958 1.39.713.498 1.223.796 1.53.796.101 0 .305-.1.611-.199.204-.1.51-.397.918-.596.51-.398 1.122-.994 2.04-1.192.306-.1.612-.1.918-.1 1.326 0 2.244.795 2.958 1.391.714.497 1.224.795 1.53.795.306 0 .816-.298 1.427-.795.714-.596 1.632-1.39 2.958-1.39 1.428 0 2.244.794 2.958 1.39.306.298.612.497.918.596.204.1.408.2.612.2.306 0 .816-.299 1.428-.895.713-.596 1.631-1.391 2.957-1.391 1.02 0 1.836.497 2.652.993l-6.12-25.336ZM23.968 53.157H16.93c-.714 0-1.122.497-1.122 1.093s.51 1.093 1.122 1.093h7.038c.713 0 1.121-.497 1.121-1.093.102-.596-.407-1.093-1.121-1.093Z"/>
+                      <path d="M20.5 28.814c-.102 0-.306.1-.612.199-.204.1-.408.298-.612.397v3.677h2.346V29.51c-.51-.398-.918-.696-1.122-.696Z"/>
+                    </g>
+                  </svg>
+                </a>
               </li>
               <li class="product-list__item">
-                <a class="product-list__link" href="#">Детские игрушки</a>
+                <a class="product-list__link" href="#">
+                  <span>Детские игрушки</span>
+                  <svg class="product-list__icon" aria-hidden="true" focusable="false"
+                  width="60" height="61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".5" d="M0 44.727 27.4 61V37.153L0 20.777v23.95ZM51.3 12.69v2.559c0 1.842-3.5 3.378-7.7 3.378-4.3 0-7.7-1.536-7.7-3.378v-4.196c.3 1.74 3.6 3.172 7.7 3.172 4.3 0 7.7-1.535 7.7-3.377 0-1.842-3.5-3.378-7.7-3.378h-1l-5-2.968v3.173c0 1.842-3.5 3.378-7.7 3.378-2.7 0-5-.614-6.4-1.536-.2-.204-.4-.409-.7-.614-.4-.409-.6-.818-.6-1.228v-3.07L17.4 7.47h-1.1c-4.3 0-7.7 1.536-7.7 3.378s3.5 3.377 7.7 3.377c4.1 0 7.4-1.432 7.7-3.172v4.196c0 1.842-3.5 3.378-7.7 3.378-4.3 0-7.7-1.536-7.7-3.378v-2.456l-6 3.582 27.5 16.376 27.4-16.274-6.2-3.787Zm-13.6 10.44c0 1.842-3.5 3.377-7.7 3.377-4.3 0-7.7-1.535-7.7-3.377v-4.196c.3 1.74 3.6 3.172 7.7 3.172s7.4-1.433 7.7-3.172v4.196Zm-5.1 14.226V61L60 44.727V21.084L32.6 37.357ZM29.9 6.755c4.3 0 7.7-1.535 7.7-3.377C37.6 1.535 34.1 0 29.9 0c-4.3 0-7.7 1.535-7.7 3.378 0 1.842 3.4 3.377 7.7 3.377Z" fill="#149080"/>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </section>
       </header>
 
-      <main class="page-main">
+      <main class="main">
       <!--Секция товар недели вязанные корзинки -->
         <section class="promo">
           <div class="promo__container container">
-            <div class="promo__title-subtitle">
-              <h2 class="promo__title">Товар недели</h2>
-              <h2 class="promo__subtitle section-title">Вязаные корзинки</h2>
+            <div class="promo__title-container">
+              <h2 class="promo__title title">Вязаные корзинки</h2>
+              <span class="promo__type">Товар недели</span>
             </div>
 
-            <p class="promo__description">Экологически чистая пряжа,
-              ручная работа. Доступны в шести расцветках и трёх размерах.
-            </p>
+            <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
             <dl class="promo__specification product-specification">
-              <div class="product-specification__row">
+              <div class="specification__item">
                 <dt class="product-specification__parameter">Цвет:</dt>
                 <dd class="product-specification__property">тиффани/серый</dd>
               </div>
-              <div class="product-specification__row">
+              <div class="specification__item">
                 <dt class="product-specification__parameter">Диаметр:</dt>
                 <dd class="product-specification__property">25 см</dd>
               </div>
-              <div class="product-specification__row">
+              <div class="specification__item">
                 <dt class="product-specification__parameter">Высота:</dt>
                 <dd class="product-specification__property">15 см</dd>
               </div>
@@ -93,7 +116,7 @@
             </div>
             <div class="promo__cost-order">
               <span class="promo__cost">Цена: 990 руб.</span>
-              <button class="promo__button button button-order">ЗАКАЗАТЬ</button>
+              <button class="promo__button button button-order">Заказать</button>
             </div>
           </div>
         </section>
@@ -101,7 +124,7 @@
         <!-- секция "О нас" -->
         <section class="about">
           <div class="about__container container">
-            <h2 class="about__title">Коротко о нас:</h2>
+            <h2 class="about__title title">Коротко о нас:</h2>
             <ul class="advantages list-reset ">
               <li class="advantages__item advantages__item--flower">Экологически чистые материалы</li>
               <li class="advantages__item advantages__item--banknote">Скандинавский стиль по российской цене</li>
@@ -117,7 +140,7 @@
         <!-- секция Отзывы -->
         <section class="reviews">
           <div class="reviews__container container">
-            <h2 class="reviews__title">Отзывы</h2>
+            <h2 class="reviews__title title">Отзывы</h2>
             <ul class="reviews__slider review">
 
               <li class="review__item review__item--active">
@@ -173,7 +196,7 @@
                 <span class="visually-hidden">Следующий отзыв</span>
               </button>
             </div>
-            <button class="reviews__button buton">Написать</button>
+            <button class="reviews__button button">Написать</button>
           </div>
         </section>
         <!--  -->
@@ -195,13 +218,13 @@
                 </div>
               </dl>
             </div>
-            <div class="contacts__map">
-              <iframe src="#" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacts__map map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1147.886154647891!2d30.321500142816383!3d59.93901132425994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681228633545!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               <noscript>
-                <a class="contacts__map-link" href="#"></a>
+                <a class="map__link" href="#"></a>
               </noscript>
             </div>
-            <button class="contacts__button button">НАпишите нам</button>
+            <button class="contacts__button button">Напишите нам</button>
           </div>
         </section>
         <!--  -->
@@ -210,6 +233,12 @@
       <!-- Футер -->
       <footer class="footer">
         <div class="footer__container container">
+          <a class="footer__logo" href="index.html" aria-current="page">
+            <svg class="footer__logo-icon" aria-hidden="true" focusable="false"
+            width="102" height="35" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.22 21.5c-.1-2.7-.5-5.3-.5-8 0-2.2.4-4.4-.4-6.5 0-.2.1-.5.1-.7.2-1-3.3-.5-3.8.5-.3.3-.5.6-.4 1 0 .1.1.2.1.3-.7 3.2-1.6 6.3-2.6 9.4-.4 1.2-.9 2.3-1.3 3.5-.6-1.1-1.2-2.2-1.6-3.4-1.4-3.4-2.6-6.9-4.3-10.2.2-1.5-3.2-1.4-3.9 0-.8 1.7-.7 3.4-.4 5.2.3 2 .4 4 .4 6.1 0 4 .4 7.9.4 11.9-.4.4-.5.9-.1 1.4.2.2.4.4.6.5 1 .7 3.6.1 3.6-1.3 0-4.1-.3-8.2-.4-12.4v-1.2c.1.1.1.3.2.4.6 1.6 1.3 3.2 2.2 4.7.9 1.5 1.3 3.1 1.8 4.7-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.5 1.8.3 2.5 0 .3-.1.6-.3.8-.4.3-.2.9-.7.7-1.2 0-.1-.1-.2-.1-.3.5-1.3.7-2.6 1-3.9.3-1.4.8-2.8 1.3-4.1.1.6.1 1.2.2 1.9.2 2.6 0 5.1 0 7.6 0 .8.1 1.6.2 2.5.1.3.4 1.8.3 1.9-.8.5-.6 1.1.2 1.3.9.2 2.1-.1 2.8-.7 1.2-1.1.6-2.8.4-4.2-.5-2.4 0-5-.1-7.4ZM27.62 22.2c-.1-2-.8-3.9-.8-5.9 0-2.3.2-4.6-.2-6.9-.1-.7-4.1.1-3.9 1 .3 2.1.2 4.2.2 6.4 0 2 .5 3.9.7 5.9.3 2.1-.1 4.2.1 6.2.1 1 .8 2.7.1 3.6-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .7-.8.2-2.4.1-3.4-.3-2-.1-4.2-.2-6.2ZM43.92 18.9c-2.1-2.8-5.9-.8-8.6-1.5-1.4-.4-1.4-2.3-1.4-3.4 0-1.4-.1-2.7-.3-4.1-.1-1.1 0-2.1.7-2.9.1-.1.9-.3.8-.3.4-.1.7-.1 1.1-.1 1.5-.1 4.6.2 4 2.5-.3 1 3.6.4 3.9-.6 1.2-4.6-7.3-3.7-9.7-3.1-2.2.6-4.6 1.8-4.8 4.4-.1 1.2.3 2.4.3 3.6.1 1.4-.2 2.8.3 4.1 1.1 3 5.5 1.6 7.8 1.7 3.8.3 2.7 5.5 2.7 7.9 0 1.3 1.2 3.4.2 4.5-.6.7-2 .7-2.8.8-.8.1-2.2.3-2.7-.5-1-1.4.1-3.8-.1-5.4-.1-.9-4.1-.1-3.9 1 .3 2.6-1.4 6.1 2.4 6.6 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.9 3.2-1.8 1-.9.7-2.3.4-3.5-.5-3.1.9-6.5-1-9ZM61.32 18.7c-.1-3.8-.7-7.5-.7-11.3 0-2-4-1.3-4 .3 0 3.6.5 7.2.7 10.8v.2c-1.9 0-3.9.2-5.9.2.2-4.6-.6-9.2-.4-13.9 0-.6-3.9-.1-3.9 1-.2 4.5.6 8.9.5 13.4-.1 2.1-.2 4.3-.3 6.4 0 1.1.2 2.2.3 3.3.1 1 .5 2.3.2 3.3-.2.8 3.6.3 3.9-.7.5-1.8-.2-4-.4-5.8-.2-1.7 0-3.5.1-5.2 2-.1 4.1-.3 6.1 0 .1 1.4.2 2.8.3 4.1.1 1.2.2 2.3.2 3.5 0 1 .1 2.5-.2 3.5-.8 2.1 3.1 1.9 3.7.4.7-1.9.5-4.2.4-6.2-.2-2.5-.6-4.9-.6-7.3ZM78.22 23.1c-.9-2.8-2.4-5.2-3.6-7.8 1-1.9 2-3.9 2.9-5.9.8-1.8 1.4-3.8 3.1-5.1.6-.4.6-.9-.3-1-.9-.1-2.1.2-2.8.7-1.4 1.3-2.4 2.7-3.1 4.4-.9 2.1-1.9 4.1-2.9 6.1-.1.1-.1.3-.2.4-.5.3-.8.8-.6 1.3-.8 1.6-1.6 3.1-2.5 4.6-.3-5.5-1-11.1-1.2-16.6 0-1.3-4-.5-3.9 1 .2 6.9 1.2 13.7 1.3 20.6v.1c-.3.3-.2.5.1.6 0 1.8-.1 3.5-.2 5.3-.5.7.5 1.1 1.1 1.1h.1c.7 0 2.6-.3 2.7-1.4.2-2.1.3-4.2.2-6.3 1.6-1.7 2.9-3.6 4.1-5.6.8 1.5 1.5 3 2 4.6.9 2.7 2.3 5.3 3.1 8 .5 1.8 4.5.7 3.9-1-1-2.8-2.4-5.3-3.3-8.1ZM101.72 18.5c-.2-.8-1.4-.8-2.3-.8v-1c-.1-2.7-.2-5.4-.4-8-.2-2.5-1.6-3.3-4-3.2-2.4.1-5.2.5-7.5 1.4-2.6 1-4.1 2.9-4.6 5.7-.5 3 .2 6.2.4 9.2.2 3.5.1 7 .1 10.5 0 .6 3.9 0 3.9-1V23c0-.8-.1-1.6-.1-2.4 1.4-.6 3.7 0 5.1.1 1.1.1 2.2-.2 3.2-.3 0 2.3.1 4.6.2 6.9 0 1.2.5 3.5-.4 4.5-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .9-1.1.5-3.8.4-5.1-.1-1.9-.1-3.8-.1-5.7 1.1-.2 2.4-.9 2.2-1.8Zm-14.6-.1c-.1-1.2-.2-2.5-.3-3.7-.2-2.3.1-5.6 2.3-7 .6-.4 1.7-.3 2.4-.4 1-.2 2-.4 2.8.2 1.2.8.9 3.7.9 4.9 0 2 .2 4 .3 6-.6.1-1.1.1-1.7.1-2.3-.2-4.6-.6-6.7-.1ZM24.22 6.7c.5-.1 1-.2 1.5-.5l.2-.2c.5-.3 1-.8.7-1.4-.5-1.1-.4-2.2-.4-3.4 0-1-1-1.2-1.8-1.2-.7.1-2.2.6-2.2 1.5 0 1-.1 2 .1 3 0 .1-.1.2-.1.4-.1.2 0 .4.1.6v.4c.1.2.2.4.4.5.6.3 1.1.3 1.5.3Z"/></svg>
+            <span class="visually-hidden">Переход на главную страницу</span>
+          </a>
           <!-- Секция соцсети -->
           <ul class="social-list list-reset ">
             <li class="social-list__item">
@@ -235,10 +264,9 @@
             <h2 class="developed__title">Разработано</h2>
             <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
               <svg class="academy-logo__icon" aria-hidden="true" focusable="false"
-              width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
               </svg>
-              <svg ></svg>
             </a>
           </div>
         </div>
