@@ -1,3 +1,10 @@
+
+body {
+  font-family: "Open sans", sans-serif;
+  color: #00000000;
+}
+
+
 @use "about.scss";
 @use "button-toggle.scss";
 @use "button.scss";
@@ -26,5 +33,3 @@
 @use "title.scss";
 @use "video.scss";
 @use "visually-hidden.scss";
-
-

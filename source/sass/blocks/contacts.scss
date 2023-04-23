@@ -1,0 +1,26 @@
+.contacts {
+  background-color: #ffffff;
+}
+
+.contacts__title {
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 43px;
+}
+
+.contacts__list {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.contacts__button {
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.contacts__property--link {
+  border-bottom: solid #62d1ba 1px;
+}
