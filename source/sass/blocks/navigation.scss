@@ -1,3 +1,8 @@
+.navigation__link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .navigation__list {
   font-weight: 700;
   line-height: 24px;
@@ -5,5 +10,12 @@
 }
 
 .navigation__list--promo {
+  font-size: 15px;
+}
+
+.navigation__text {
+  color: #444444;
+  font-weight: 400;
+  line-height: 24px;
   font-size: 15px;
 }
