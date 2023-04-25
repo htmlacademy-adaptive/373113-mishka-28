@@ -1,14 +1,15 @@
-.contacts {
-  background-color: #ffffff;
-}
-
-.contacts__property--link {
-  border-bottom: solid #62d1ba 1px;
-}
-
 .contacts__list {
   font-weight: 400;
-  line-height: 30px;
+  font-size: 14px;
+}
+
+.contacts__property {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.contacts__parameter {
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -16,5 +17,8 @@
   font-weight: 700;
   line-height: 20px;
   font-size: 18px;
-  text-transform: uppercase;
+}
+
+.contacts__property--link {
+  border-bottom: solid #62d1ba 1px;
 }
