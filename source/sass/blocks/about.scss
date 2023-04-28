@@ -19,9 +19,9 @@
 .about__item--flower::before {
   content: "";
   display: block;
-  height: 33px;
-  width: 38px;
-  background: url(/source/img/icon-flower.png) no-repeat #fc0;
+  width: 33px;
+  height: 38px;
+  background: url(../img/icon-flower.png) no-repeat #ffff;
   margin-bottom: 16px;
 }
 
@@ -35,7 +35,7 @@
   display: block;
   width: 47px;
   height: 27px;
-  background: url(/source/img/icon-bancnote.png) no-repeat #fc0;
+  background: url(../img/icon-bancnote.png) no-repeat #ffff;
   margin-bottom: 26px;
 }
 
@@ -48,7 +48,7 @@
   display: block;
   width: 34px;
   height: 27px;
-  background: url(/source/img/icon-heart.png) no-repeat #fc0;
+  background: url(../img/icon-heart.png) no-repeat #ffff;
   margin-bottom: 21px;
 }
 
@@ -61,7 +61,7 @@
   display: block;
   width: 35px;
   height: 34px;
-  background: url(/source/img/icon-knot.png) no-repeat #fc0;
+  background: url(../img/icon-knot.png) no-repeat #ffff;
   background-image: url("/source/img/icon-knot.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -77,7 +77,7 @@
   display: block;
   width: 55px;
   height: 23px;
-  background: url(/source/img/icon-rocket.png) no-repeat #fc0;
+  background: url(../img/icon-rocket.png) no-repeat  #ffff;
   margin-bottom: 26px;
 }
 
@@ -90,7 +90,7 @@
   display: block;
   width: 33px;
   height: 32px;
-  background: url(/source/img/icon-gift.png) no-repeat #fc0;
+  background: url(../img/icon-gift.png) no-repeat  #ffff;
   margin-bottom: 20px;
 }
 
