@@ -4,8 +4,13 @@
   font-size: 19px;
   color: #ffffff;
   text-decoration: none;
+  padding-top: 24px;
+  padding-right: 160px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+  display: block;
+  position: relative;  
 }
-
 
 .product-list__item--interior {
   background-color: #63d1bb;
@@ -13,4 +18,10 @@
 
 .product-list__item--toys {
   background-color: #56c3b2;
+}
+
+.product-list__icon{
+  position: absolute;
+  right: 36px;
+  top: 23px;
 }

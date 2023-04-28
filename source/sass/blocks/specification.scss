@@ -2,6 +2,12 @@
   font-weight: 400;
   line-height: 20px;
   color: #444444;
+  display: grid;
+  grid-template-columns: 97px 162px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  border-bottom: 1px solid #ECECEC;
+  margin-bottom: 28px;
 }
 
 .specification__parameter {
