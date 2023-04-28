@@ -8,6 +8,7 @@
   padding-left: 76px;
   padding-bottom: 28px;
   display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navigation__text {
@@ -15,4 +16,24 @@
   line-height: 24px;
   font-size: 15px;
   color: #444444;
+}
+
+.navigation__logo-container{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navigation__list--main{
+  display: none;
+}
+
+.navigation__list--user{
+  display: none;
+}
+
+.navigation__list--promo{
+  display: none;
+}
+
+.navigation__text{
+  display: none;
 }

@@ -1,5 +1,8 @@
 .about{
   padding-top: 31px;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .about__item {
@@ -9,6 +12,88 @@
   margin-bottom: 83px;
 }
 
-.about__title{
-  margin-bottom: 82px;
+.about__title {
+  margin-bottom: 28px;
+}
+
+.about__item--flower::before {
+  content: "";
+  display: block;
+  height: 33px;
+  width: 38px;
+  background: url(/source/img/icon-flower.png) no-repeat #fc0;
+  margin-bottom: 16px;
+}
+
+.about__item--flower{
+  margin-bottom: 30px;
+}
+
+
+.about__item--banknote::before{
+  content: "";
+  display: block;
+  width: 47px;
+  height: 27px;
+  background: url(/source/img/icon-bancnote.png) no-repeat #fc0;
+  margin-bottom: 26px;
+}
+
+.about__item--banknote{
+  margin-bottom: 35px;
+}
+
+.about__item--heart::before{
+  content: "";
+  display: block;
+  width: 34px;
+  height: 27px;
+  background: url(/source/img/icon-heart.png) no-repeat #fc0;
+  margin-bottom: 21px;
+}
+
+.about__item--heart{
+  margin-bottom: 32px;
+}
+
+.about__item--knot::before{
+  content: "";
+  display: block;
+  width: 35px;
+  height: 34px;
+  background: url(/source/img/icon-knot.png) no-repeat #fc0;
+  background-image: url("/source/img/icon-knot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 17px;
+}
+
+.about__item--knot{
+  margin-bottom: 33px;
+}
+
+.about__item--rocket::before{
+  content: "";
+  display: block;
+  width: 55px;
+  height: 23px;
+  background: url(/source/img/icon-rocket.png) no-repeat #fc0;
+  margin-bottom: 26px;
+}
+
+.about__item--rocket{
+  margin-bottom: 32px;
+}
+
+.about__item--gift::before{
+  content: "";
+  display: block;
+  width: 33px;
+  height: 32px;
+  background: url(/source/img/icon-gift.png) no-repeat #fc0;
+  margin-bottom: 20px;
+}
+
+.about__item--gift{
+  margin-bottom: 58px;
 }

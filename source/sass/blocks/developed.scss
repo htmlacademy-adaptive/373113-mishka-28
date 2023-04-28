@@ -1,5 +1,24 @@
+.developed {
+  display: flex;
+  margin-left: 39px;
+  padding-top: 30px;
+  position: relative;
+}
+
+
 .developed__title {
   font-weight: 700;
   line-height: 18px;
   font-size: 19px;
+  margin: auto 0;
 }
+
+.developed__logo{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 22px;
+  left: 155px;
+
+}
+

@@ -6,6 +6,7 @@
 .contacts__property {
   font-weight: 400;
   font-size: 14px;
+  margin: 0;
 }
 
 .contacts__parameter {
@@ -13,12 +14,31 @@
   font-size: 14px;
 }
 
+.contacts__button-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .contacts__button {
   font-weight: 700;
   line-height: 20px;
   font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .contacts__property--link {
   border-bottom: solid #62d1ba 1px;
+}
+
+.contacts__title{
+  padding: 38px 30px 28px;
+}
+
+.contacts__row{
+  display: grid;
+  grid-template-columns: 76px 183px;
+}
+
+.contacts__text{
+  padding: 0 30px 62px;
 }

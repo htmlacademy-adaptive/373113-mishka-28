@@ -18,7 +18,7 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
-  color: #444444;
+  color: #000000;
 }
 
 img {
@@ -27,3 +27,8 @@ img {
 
   object-fit: cover;
 }
+
+// Viewports
+@tablet-width: 768px;
+@desktop-width: 1150px;
+@mobile-width-only: 767px;

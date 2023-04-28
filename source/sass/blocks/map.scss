@@ -1,1 +1,14 @@
-// стили для блока map
+.map {
+  position: relative;
+  margin-bottom: 41px;
+}
+
+.map__pin {
+  position: absolute;
+  left: 138px;
+  top: 145px;
+}
+
+.map__link{
+  display: flex;
+}
