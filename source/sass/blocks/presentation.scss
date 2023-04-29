@@ -1,7 +1,5 @@
 .presentation__title {
-  text-align: center;
-  margin-top: 73px;
-  margin-bottom: 120px;
+  text-align: center;  
 }
 
 .presentation__container {
@@ -13,4 +11,8 @@
   background: url("../img/presentation--main.jpg") no-repeat;
   width: 100%;
   height: 100%;
+  @media (min-width: @tablet-width){
+    background: url("../img/presentation-tablet.jpg") no-repeat;
+
+  }
 }

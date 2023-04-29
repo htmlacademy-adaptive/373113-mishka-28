@@ -1,3 +1,10 @@
+.product-list {
+  @media (min-width: @tablet-width){
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .product-list__link {
   font-weight: 700;
   line-height: 24px;
@@ -10,17 +17,24 @@
   padding-left: 30px;
   display: block;
   position: relative;  
+
+  @media (min-width: @tablet-width){
+    padding-left: 60px;
+  }
 }
 
 .product-list__item--interior {
   background-color: #63d1bb;
+  @media (min-width: @tablet-width){
+    margin-left: 30px;
+  }
 }
 
 .product-list__item--toys {
   background-color: #56c3b2;
 }
 
-.product-list__icon{
+.product-list__icon {
   position: absolute;
   right: 36px;
   top: 23px;
