@@ -2,7 +2,8 @@
   font-weight: 700;
   font-size: 25px;
   margin: 0;
-  @media (min-width: 768px){
+
+  @media (min-width: $tablet-width) {
     line-height: 50px;
     font-size: 43px;
   }
@@ -14,10 +15,11 @@
   margin: auto;
   margin-top: 73px;
   margin-bottom: 120px;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: $tablet-width) {
     width: 668px;
     margin-top: 154px;
     margin-bottom: 372px;
-    font-size: 43px
+    font-size: 43px;
   }
 }

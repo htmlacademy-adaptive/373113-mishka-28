@@ -1,4 +1,4 @@
-.about{
+.about {
   padding-top: 31px;
   display: flex;
   padding-left: 30px;
@@ -21,79 +21,76 @@
   display: block;
   width: 33px;
   height: 38px;
-  background: url(../img/icon-flower.png) no-repeat #ffff;
+  background: url("../img/icon-flower.png") no-repeat #ffffffff;
   margin-bottom: 16px;
 }
 
-.about__item--flower{
+.about__item--flower {
   margin-bottom: 30px;
 }
 
 
-.about__item--banknote::before{
+.about__item--banknote::before {
   content: "";
   display: block;
   width: 47px;
   height: 27px;
-  background: url(../img/icon-bancnote.png) no-repeat #ffff;
+  background: url("../img/icon-bancnote.png") no-repeat #ffffffff;
   margin-bottom: 26px;
 }
 
-.about__item--banknote{
+.about__item--banknote {
   margin-bottom: 35px;
 }
 
-.about__item--heart::before{
+.about__item--heart::before {
   content: "";
   display: block;
   width: 34px;
   height: 27px;
-  background: url(../img/icon-heart.png) no-repeat #ffff;
+  background: url("../img/icon-heart.png") no-repeat #ffffffff;
   margin-bottom: 21px;
 }
 
-.about__item--heart{
+.about__item--heart {
   margin-bottom: 32px;
 }
 
-.about__item--knot::before{
+.about__item--knot::before {
   content: "";
   display: block;
   width: 35px;
   height: 34px;
-  background: url(../img/icon-knot.png) no-repeat #ffff;
-  background-image: url("/source/img/icon-knot.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/icon-knot.png") no-repeat #ffffffff;
   margin-bottom: 17px;
 }
 
-.about__item--knot{
+.about__item--knot {
   margin-bottom: 33px;
 }
 
-.about__item--rocket::before{
+.about__item--rocket::before {
   content: "";
   display: block;
   width: 55px;
   height: 23px;
-  background: url(../img/icon-rocket.png) no-repeat  #ffff;
+  background: url("../img/icon-rocket.png") no-repeat  #ffffffff;
   margin-bottom: 26px;
 }
 
-.about__item--rocket{
+.about__item--rocket {
   margin-bottom: 32px;
 }
 
-.about__item--gift::before{
+.about__item--gift::before {
   content: "";
   display: block;
   width: 33px;
   height: 32px;
-  background: url(../img/icon-gift.png) no-repeat  #ffff;
+  background: url("../img/icon-gift.png") no-repeat  #ffffffff;
   margin-bottom: 20px;
 }
 
-.about__item--gift{
+.about__item--gift {
   margin-bottom: 58px;
 }

@@ -1,5 +1,5 @@
 .presentation__title {
-  text-align: center;  
+  text-align: center;
 }
 
 .presentation__container {
@@ -7,12 +7,12 @@
   border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
 }
 
-.presentation__container--main{
-  background: url("../img/presentation--main.jpg") no-repeat;
+.presentation__container--main {
+  background: url("../img/presentation-mobile.jpg") no-repeat background-position: 25% 75%;;
   width: 100%;
   height: 100%;
-  @media (min-width: @tablet-width){
-    background: url("../img/presentation-tablet.jpg") no-repeat;
 
+  @media (min-width: $tablet-width) {
+    background: url("../img/presentation-tablet.jpg") no-repeat;
   }
 }

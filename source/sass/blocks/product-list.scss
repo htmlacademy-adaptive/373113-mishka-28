@@ -1,5 +1,5 @@
 .product-list {
-  @media (min-width: @tablet-width){
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
   }
@@ -16,18 +16,22 @@
   padding-bottom: 31px;
   padding-left: 30px;
   display: block;
-  position: relative;  
+  position: relative;
 
-  @media (min-width: @tablet-width){
-    padding-left: 60px;
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 36px;
   }
 }
 
+.product-list__item{
+  width: 334px;
+}
+
 .product-list__item--interior {
-  background-color: #63d1bb;
-  @media (min-width: @tablet-width){
-    margin-left: 30px;
-  }
+  background-color: #63d1bb; 
 }
 
 .product-list__item--toys {
@@ -37,5 +41,5 @@
 .product-list__icon {
   position: absolute;
   right: 36px;
-  top: 23px;
+  top: 23px;  
 }

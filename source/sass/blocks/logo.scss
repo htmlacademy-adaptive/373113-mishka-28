@@ -5,14 +5,21 @@
   margin-top: 22px;
   margin-bottom: 22px;
   margin-left: 116px;
- 
-  @media (min-width: 768px){
-    margin: 0;
+  background: url("../img/logo-mobile.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
     width: 113px;
     height: 46px;
-    margin: 22px 100px 22px 40px;  
+    margin: 22px 208px 22px 40px;
+    background: url("../img/logo-tablet.svg") no-repeat;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+    margin: 22px 208px 22px 40px;
+    background: url("../img/logo-desktop.svg") no-repeat;
+  }
 }
 
 .logo__image {
