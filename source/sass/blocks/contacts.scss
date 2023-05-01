@@ -1,3 +1,15 @@
+.contacts {
+  padding: 38px 0;
+}
+
+.contacts__container {
+  padding: 0;
+
+  @media (min-width: 1150px) {
+    padding: 0 50px;
+  }
+}
+
 .contacts__list {
   font-weight: 400;
   font-size: 14px;
