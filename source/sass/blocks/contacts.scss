@@ -10,25 +10,53 @@
   }
 }
 
-.contacts__list {
-  font-weight: 400;
+.contacts__text {
+  padding: 0 30px 62px;
+  @media (min-width: 768px) {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.contacts__title {
+  display: flex;
+  gap: 374px;
+  align-items: center;
+}
+
+.contacts__title::after {
+  @media (min-width: 768px) {
+    content: "";
+    background-image: url("../img/svg/flag.svg");
+    width: 47px;
+    height: 81px;
+    display: block;
+    
+  }
+}
+
+.contacts__list {  
   font-size: 14px;
+  margin: 0;
+  margin-top: 28px;
+
+  @media (min-width: 768px) {
+    margin-top: 49px;
+    display: flex;
+    gap: 25px;
+    font-size: 17px;
+  }
+}
+
+.contacts__row {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 15px 17px;
 }
 
 .contacts__property {
-  font-weight: 400;
-  font-size: 14px;
   margin: 0;
-}
-
-.contacts__parameter {
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.contacts__button-wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .contacts__button {
@@ -38,19 +66,14 @@
   margin-bottom: 40px;
 }
 
-.contacts__property--link {
-  border-bottom: solid #62d1ba 1px;
+.contacts__property a {
+  color: #444444;
+  text-decoration: none;
+
+  border-bottom: 1px solid #62d1ba;
 }
 
-.contacts__title {
-  padding: 38px 30px 28px;
-}
-
-.contacts__row {
-  display: grid;
-  grid-template-columns: 76px 183px;
-}
-
-.contacts__text {
-  padding: 0 30px 62px;
+.contacts__button {
+  width: 260px;
+  margin: 0 auto;
 }
