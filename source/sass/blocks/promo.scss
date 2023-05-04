@@ -1,6 +1,16 @@
 .promo {
   padding-top: 31px;
   padding-bottom: 36px;
+
+  @media (min-width: 768px) {
+    padding-top: 39px;
+  
+  }
+
+  @media (min-width: 1150px) {
+    padding-top: 54px;
+    
+  }
 }
 
 .promo__container {
@@ -96,6 +106,9 @@
   line-height: 24px;
   font-size: 17px;
   color: #444444;
+  @media (min-width: 768px) {
+  text-align: center;
+  }
 }
 
 .promo__image {

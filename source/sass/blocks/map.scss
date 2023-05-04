@@ -2,6 +2,9 @@
   width: 100%;
   height: 454px;
   margin-bottom: 41px;
+  @media (min-width: 1150px) {
+  margin-bottom: 0px;
+  }
 }
 
 .map iframe {

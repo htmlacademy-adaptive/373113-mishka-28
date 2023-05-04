@@ -3,7 +3,6 @@
   top: 0;
   right: 0;
   left: 0;
-  background-color: yellow;
   z-index: 10;
 
   min-height: 79px;
@@ -20,7 +19,7 @@
     gap: 21px 19px;
     padding: 0;
 
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
     border: none;
   }
 
@@ -210,6 +209,11 @@
 
   @media (min-width: 768px) {
     padding: 0;
+    border: none;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 33px 35px 31px 35px;
   }
 
   &--icon {
@@ -220,7 +224,7 @@
 
     @media (min-width: 1150px) {
       padding: 33px 35px 31px 83px;
-    }
+    }    
   }
 }
 
