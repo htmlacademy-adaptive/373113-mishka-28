@@ -1,6 +1,6 @@
 .promo {
-  padding-top: 31px;  
-  padding-bottom: 36px;  
+  padding-top: 31px;
+  padding-bottom: 36px;
 }
 
 .promo__container {
@@ -49,7 +49,7 @@
 }
 
 .promo__type {
-  display: block; 
+  display: block;
   font-weight: 700;
   line-height: 20px;
   font-size: 17px;
@@ -71,16 +71,16 @@
 }
 
 .promo__description {
-  
+
   line-height: 24px;
-  
+
   margin: 0 0 28px;
-  
-  
-  @media (min-width: $tablet-width){
+
+
+  @media (min-width: 768px){
     line-height: 30px;
     font-size: 17px;
-    
+
   }
 }
 
@@ -94,8 +94,8 @@
   margin-bottom: 25px;
   font-weight: 700;
   line-height: 24px;
-  font-size: 17px;  
-  color: #444444;    
+  font-size: 17px;
+  color: #444444;
 }
 
 .promo__image {

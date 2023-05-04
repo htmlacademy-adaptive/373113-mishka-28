@@ -1,5 +1,5 @@
 .product-list {
-  @media (min-width: $tablet-width) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: center;
   }
@@ -18,7 +18,7 @@
   display: block;
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 768px) {
     font-weight: 700;
     line-height: 30px;
     font-size: 20px;
@@ -31,7 +31,7 @@
 }
 
 .product-list__item--interior {
-  background-color: #63d1bb; 
+  background-color: #63d1bb;
 }
 
 .product-list__item--toys {
@@ -41,5 +41,5 @@
 .product-list__icon {
   position: absolute;
   right: 36px;
-  top: 23px;  
+  top: 23px;
 }

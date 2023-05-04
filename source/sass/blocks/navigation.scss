@@ -68,7 +68,7 @@
   right: 31px;
   width: 20px;
   height: 14px;
-  
+
   @media (min-width: 768px) {
     display: none;
   }
@@ -205,7 +205,7 @@
   font-weight: 700;
   line-height: 24px;
   font-size: 17px;
-  
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: 768px) {
@@ -273,10 +273,10 @@
 
 .navigation__text {
   line-height: 24px;
-  font-size: 15px;  
+  font-size: 15px;
   display: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 768px) {
     display: block;
     margin: 0 50px 0 auto;
   }
@@ -300,6 +300,3 @@
     display: block;
   }
 }
-
-
-
