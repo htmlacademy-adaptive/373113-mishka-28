@@ -1,1 +1,13 @@
-// стили для блока catalog
+.catalog {
+  padding: 30px 0;
+}
+
+.catalog__item {
+  padding-bottom: 30px;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 52px;
+}
