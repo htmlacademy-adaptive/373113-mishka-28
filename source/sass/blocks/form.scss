@@ -1,5 +1,9 @@
 .form {
   padding-top: 15px;
+
+  @media (min-width: 768px) {
+    padding-top: 63px;
+  }
 }
 
 .form__group {
@@ -7,6 +11,24 @@
   padding: 0;
 
   border: none;
+}
+
+.form__group:nth-child(2n):not(:last-child) {
+  background-color: #f1f1f1;
+}
+
+.form__group--checkbox {
+  @media (min-width: 768px) {
+    padding-top: 50px;
+  }
+}
+
+.form__container {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 103px;
+  }
 }
 
 .form__title {
@@ -25,8 +47,100 @@
   min-height: 42px;
 }
 
+.form__group--checkbox .form__list {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+  }
+}
+
+.form__group--name {
+  @media (min-width: 768px) {
+    padding: 50px 0;
+  }
+}
+
+.form__group--name .form__container {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 40px 700px;
+  }
+}
+
+
+.form__group--name .form__list {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}
+
+.form__group--name .form__input-group {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+
+.form__group--contacts {
+  @media (min-width: 768px) {
+    padding: 50px 0;
+  }
+}
+
+.form__group--contacts .form__container {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 167px 1fr;
+    gap: 0;
+  }
+}
+
+.form__group.form__group--contacts {
+  @media (min-width: 768px) {
+    display: grid;
+    row-gap: 24px;
+  }
+}
+
+.form__group--textarea {
+  @media (min-width: 768px) {
+    padding: 50px 0;
+  }
+}
+
+.form__group--textarea .form__container {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 167px 1fr;
+    gap: 0;
+  }
+}
+
+.form__group--submit-notice .form__container {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    align-items: center;
+  }
+}
+
+
 .form__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 24px;
+}
+
+.form__item:last-child {
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 
 .form__label {
@@ -34,6 +148,10 @@
   line-height: 18px;
   font-size: 17px;
   color: #000000;
+
+  @media (min-width: 768px) {
+    font-size: 19px;
+  }
 }
 
 .form__input-control {
@@ -54,6 +172,11 @@
   height: 40px;
 
   border-radius: 50%;
+
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
 
   &::before {
     content: "";
@@ -95,7 +218,7 @@
     height: 16px;
 
     background-image: url("../img/svg/tick.svg");
-    
+
     transform: translate(-50%, -50%);
 
     @media (min-width: 768px) {
@@ -118,22 +241,106 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $font-family;
   color: #444444;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+
+    opacity: 1;
+  }
 }
 
-.form__button {
-  font-weight: 700;
-  line-height: 16px;
-  font-size: 17px;
+.form__label-contacts {
+  position: relative;
+
+  display: block;
+
+  @media (min-width: 1150px) {
+    max-width: 700px;
+  }
+
+  // Добавиляем псевдоэлементы для иконок
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+
+    display: block;
+
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+// И делаем иконки через svg маску
+.form__label-contacts--tel {
+  &::after {
+    right: 3px;
+
+    width: 25px;
+    height: 24px;
+
+    mask-image: url("../img/svg/icon-phone.svg");
+
+    @media (min-width: 768px) and (max-width: 1149px) {
+      right: 27px;
+    }
+
+    @media (max-width: 1150px) {
+      right: 8px;
+    }
+  }
+}
+
+.form__label-contacts--mail {
+  &::after {
+    right: 15px;
+
+    width: 32px;
+    height: 21px;
+
+    mask-image: url("../img/svg/icon-mail.svg");
+
+    @media (min-width: 768px) and (max-width: 1149px) {
+      right: 27px;
+    }
+
+    @media (max-width: 1150px) {
+      right: 4px;
+    }
+  }
+}
+
+.form__group--textarea textarea {
+  height: 142px;
+  margin-top: 7px;
+  padding: 15px;
+
+  border: 2px solid #444444;
+
+  resize: none;
 }
 
 .form__notice {
-  font-weight: 400;
+  margin: 0 0 28px;
   line-height: 16px;
   font-size: 14px;
-  color: #444444;
+
+  @media (min-width: 768px) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0;
+  }
+}
+
+.form__button {
+  line-height: 16px;
+  font-size: 17px;
+
+  @media (min-width: 768px) {
+    grid-column: 1/2;
+  }
 }

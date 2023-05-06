@@ -4,7 +4,7 @@
   background-color: #f1f1f1;
 
   @media (min-width: 768px) {
-    padding-top: 110px;
+    padding-top: 101px;
   }
 
   @media (min-width: 1150px) {
@@ -22,16 +22,10 @@
 
   @media (min-width: 768px) {
     background-image: url("../img/presentation-tablet.png");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-color: #F9F9F9;
-    
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: #f9f9f9;
   }
-
-  @media (min-width: 1150px) {
-    
-  }
-
 }
 
 .presentation__container {
@@ -59,6 +53,7 @@
 
 .presentation__menu {
   margin-top: 120px;
+
   @media (min-width: 768px) {
     margin-top: auto;
   }

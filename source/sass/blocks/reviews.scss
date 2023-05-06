@@ -4,33 +4,34 @@
 
   @media (min-width: 768px) {
     padding-bottom: 68px;
-
   }
 }
 
 .reviews__container {
   @media (min-width: 768px) {
-  display: grid;
-  grid-template-columns: auto 175px;
-  column-gap: 193px;
-  row-gap: 38px;
-  position: relative;
-  background-image: url("../img/reviews-fon.jpg");
-  background-repeat: no-repeat;
-  padding-top: 83px;
+    display: grid;
+    grid-template-columns: auto 175px;
+    column-gap: 193px;
+    row-gap: 38px;
+    position: relative;
+    background-image: url("../img/reviews-fon.jpg");
+    background-repeat: no-repeat;
+    padding-top: 83px;
   }
 }
 
 .reviews__title {
   margin-bottom: 14px;
+
   @media (min-width: 768px) {
     grid-column: 1/2;
     margin: 0;
-    }
+  }
 }
 
 .reviews__slider {
   margin-bottom: 30px;
+
   @media (min-width: 768px) {
     grid-column: 1/span 2;
   }
@@ -40,13 +41,13 @@
   margin-bottom: 38px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media (min-width: 768px){
+
+  @media (min-width: 768px) {
     position: absolute;
     bottom: 0;
     right: 69px;
     width: 150px;
   }
-
 }
 
 .reviews__control--prev {
@@ -56,10 +57,10 @@
   background-position: center;
   border: 1px solid #ececec;
   height: 52px;
-  @media (min-width: 768px){
+
+  @media (min-width: 768px) {
     border: none;
   }
-
 }
 
 .reviews__control--next {
@@ -69,7 +70,8 @@
   background-position: center;
   border: 1px solid #ececec;
   height: 52px;
-  @media (min-width: 768px){
+
+  @media (min-width: 768px) {
     border: none;
   }
 }
