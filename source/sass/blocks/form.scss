@@ -263,7 +263,6 @@
     max-width: 700px;
   }
 
-  // Добавиляем псевдоэлементы для иконок
   &::after {
     content: "";
     position: absolute;
@@ -275,7 +274,6 @@
   }
 }
 
-// И делаем иконки через svg маску
 .form__label-contacts--tel {
   &::after {
     right: 3px;

@@ -291,7 +291,6 @@
   }
 }
 
-// Реализуем открытие и закрытие меню по классу, который добавляется через js
 .navigation--opened .navigation__toggle {
   @media (max-width: 767px) {
     background-color: #22772288;

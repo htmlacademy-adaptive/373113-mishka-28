@@ -17,7 +17,6 @@
   gap: 16px;
 
   @media (min-width: 768px) {
-    // display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 37px 42px;
   }
