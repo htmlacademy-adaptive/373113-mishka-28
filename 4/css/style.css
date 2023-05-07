@@ -165,10 +165,15 @@ img {
 
 .navigation__toggle {
   position: absolute;
-  top: 22px;
-  right: 31px;
+  top: 32px;
+  right: 51px;
   width: 20px;
-  height: 14px;
+  height: 2px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  background-color: #231f20;
+  box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
 }
 @media (min-width: 768px) {
   .navigation__toggle {
@@ -387,7 +392,14 @@ img {
 
 @media (max-width: 767px) {
   .navigation--opened .navigation__toggle {
-    background-color: #22772288;
+    top: 29px;
+    right: 51px;
+    width: 21px;
+    height: 20px;
+    background-color: #ffffff;
+    background-image: url("../img/svg/menu-close.svg");
+    background-repeat: no-repeat;
+    box-shadow: none;
   }
 }
 
