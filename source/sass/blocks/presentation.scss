@@ -20,11 +20,19 @@
   background-repeat: no-repeat;
   background-position: bottom center;
 
+  @media (min-resolution: 2dppx){
+    background-image: url("../img/presentation-main@2x.jpg"); 
+  }
+
   @media (min-width: 768px) {
     background-image: url("../img/presentation-tablet.png");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-color: #f9f9f9;
+
+    @media (min-resolution: 2dppx){
+      background-image: url("../img/presentation-tablet@2x.jpg"); 
+    }
   }
 }
 
