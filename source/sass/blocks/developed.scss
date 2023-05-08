@@ -1,5 +1,20 @@
-.developed__title {
+.developed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  color: #000000;
+  text-decoration: none;
+}
+
+.developed__text {
+  display: inline-block;
+  margin-right: 27px;
   font-weight: 700;
-  line-height: 18px;
   font-size: 19px;
+  line-height: 18px;
+}
+
+.developed svg {
+  fill: #63d1bb;
 }

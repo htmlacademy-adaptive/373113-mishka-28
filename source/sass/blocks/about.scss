@@ -1,5 +1,69 @@
+.about {
+  padding: 32px 0;
+}
+
+.about__title {
+  margin-bottom: 28px;
+}
+
+.about__list {
+  @media (min-width: 768px) {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 .about__item {
+  margin-bottom: 28px;
+  padding-top: 55px;
+
   font-weight: 700;
   line-height: 20px;
   font-size: 17px;
+  color: #000000;
+
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    max-width: 325px;
+    margin-bottom: 54px;
+    padding-top: 57px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--flower {
+    background-image: url("../img/svg/icon-flower.svg");
+    background-position: top left 8px;
+  }
+
+  &--banknote {
+    background-image: url("../img/svg/icon-banknote.svg");
+    background-position: top left 8px;
+  }
+
+  &--heart {
+    background-image: url("../img/svg/icon-heart.svg");
+    background-position: top left 8px;
+  }
+
+  &--knot {
+    background-image: url("../img/svg/icon-knot.svg");
+    background-position: top left 8px;
+  }
+
+  &--rocket {
+    background-image: url("../img/svg/icon-rocket.svg");
+    background-position: top left 8px;
+  }
+
+  &--gift {
+    background-image: url("../img/svg/icon-gift.svg");
+    background-position: top left 8px;
+  }
 }

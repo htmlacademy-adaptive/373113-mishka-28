@@ -1,25 +1,138 @@
 .promo {
-  background-color: #ffffffff;
+  padding-top: 31px;
+  padding-bottom: 36px;
+
+  @media (min-width: 768px) {
+    padding-top: 39px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-top: 54px;
+  }
+}
+
+.promo__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 42px;
+  }
+
+  @media (min-width: 1150px) {
+    position: relative;
+
+    grid-template-columns: 1fr 525px;
+    gap: 35px 60px;
+    padding-bottom: 60px;
+    padding-left: 226px;
+  }
+}
+
+
+.promo__title-container {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 125px;
+    gap: 10px;
+    grid-column: 1/-1;
+    align-items: center;
+  }
+
+  @media (min-width: 1150px) {
+    grid-row: 1 / span 1;
+    padding-top: 61px;
+  }
+}
+
+.promo__title {
+  text-align: start;
+
+  @media (min-width: 1150px) {
+    z-index: 1;
+  }
 }
 
 .promo__type {
+  display: block;
   font-weight: 700;
   line-height: 20px;
   font-size: 17px;
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media (min-width: 1150px) {
+    position: absolute;
+    top: 70px;
+    left: 82px;
+
+    max-width: 100px;
+  }
 }
 
 .promo__description {
-  font-weight: 400;
+
   line-height: 24px;
-  color: #444444;
+
+  margin: 0 0 28px;
+
+
+  @media (min-width: 768px) {
+    line-height: 30px;
+    font-size: 17px;
+  }
+}
+
+.promo__specification {
+  margin: 0;
+  padding: 0;
 }
 
 .promo__cost {
+  display: block;
+  margin-bottom: 25px;
   font-weight: 700;
   line-height: 24px;
   font-size: 17px;
   color: #444444;
-  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+}
+
+.promo__image {
+  width: 100%;
+  max-width: 350px;
+  height: 315px;
+  margin: 12px auto;
+
+  @media (min-width: 768px) {
+    grid-column: span 1/-1;
+    grid-row: 2 / span 3;
+    width: 334px;
+    height: 404px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1150px) {
+    grid-row: 1 / span 5;
+    width: 525px;
+    max-width: 100%;
+    height: 636px;
+    margin: 0;
+  }
+}
+
+.promo__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

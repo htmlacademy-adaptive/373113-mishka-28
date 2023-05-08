@@ -1,6 +1,21 @@
+.order {
+  padding-top: 17px;
+  padding-bottom: 55px;
+}
+
 .order__description {
-  color: #444444;
-  font-weight: 400;
-  line-height: 24px;
+  margin: 0;
   font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1150px) {
+    width: 702px;
+  }
 }

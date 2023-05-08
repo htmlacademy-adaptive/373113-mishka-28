@@ -1,1 +1,22 @@
-// стили для блока social list
+.social-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 27px;
+  justify-content: center;
+  padding: 27px 0 31px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 22px;
+
+  color: #231f20;
+}
+
+.social-list__link svg {
+  fill: currentColor;
+}
