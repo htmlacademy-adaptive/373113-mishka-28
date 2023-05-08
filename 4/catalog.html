@@ -19,7 +19,11 @@
 
           <div class="navigation__logo-container">
             <a class="logo" href="index.html" >
-              <img class="logo__image" src="img/svg/logo-mobile.svg" alt="логотип" width="86" height="35">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                <img class="logo__image" src="img/svg/logo-mobile.svg" alt="логотип" width="86" height="35">
+              </picture>
             </a>
           </div>
 
@@ -76,7 +80,7 @@
             <ul class="catalog__list list-reset">
               <li class="catalog__item card">
                 <a class="card__image" href="#">
-                  <img src="img/photo-1-mobile.jpg" alt="фото Зайчика-попрыгайчика" width="260" height="195">
+                  <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="фото Зайчика-попрыгайчика" width="260" height="195">
                 </a>
                 <div class="card__container">
                   <div class="card__description">
@@ -100,7 +104,7 @@
 
               <li class="catalog__item card">
                 <a class="card__image" href="#">
-                  <img src="img/photo-2-mobile.jpg" alt="фото Корзинки для белья" width="260" height="195">
+                  <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" alt="фото Корзинки для белья" width="260" height="195">
                 </a>
                 <div class="card__container">
                   <div class="card__description">
@@ -124,7 +128,7 @@
 
               <li class="catalog__item card">
                 <a class="card__image" href="#">
-                  <img src="img/photo-3-mobile.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+                  <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
                 </a>
                 <div class="card__container">
                   <div class="card__description">

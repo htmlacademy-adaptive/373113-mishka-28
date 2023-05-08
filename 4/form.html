@@ -19,7 +19,11 @@
 
           <div class="navigation__logo-container">
             <a class="logo" href="index.html">
-              <img class="logo__image" src="img/svg/logo-mobile.svg" alt="логотип" width="86" height="35">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                <img class="logo__image" src="img/svg/logo-mobile.svg" alt="логотип" width="86" height="35">
+              </picture>
             </a>
           </div>
 

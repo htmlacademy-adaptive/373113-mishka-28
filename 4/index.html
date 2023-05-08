@@ -20,7 +20,11 @@
 
           <div class="navigation__logo-container">
             <a class="logo" href="index.html" aria-current="page">
-              <img class="logo__image" src="img/svg/logo-mobile.svg" alt="логотип" width="86" height="35">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                <img class="logo__image" src="img/svg/logo-mobile.svg" alt="логотип" width="86" height="35">
+              </picture>
             </a>
           </div>
 
@@ -120,7 +124,7 @@
               </div>
             </dl>
             <div class="promo__image">
-              <img src="img/promo-image.jpg" alt="фото вязанной корзинки" width="260" height="315">
+              <img src="img/promo-image.jpg" srcset="img/promo-image@2x.jpg 2x" alt="фото вязанной корзинки" width="260" height="315">
             </div>
             <div class="promo__cost-order">
               <span class="promo__cost">Цена: 990 руб.</span>

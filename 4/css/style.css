@@ -493,16 +493,36 @@ img {
 .presentation--main {
   padding-bottom: 0;
   background-color: #f9f9f9;
-  background-image: url("../img/presentation-main.jpg");
+  background-image: url("../img/presentation-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
+}
+@media (min-resolution: 2dppx) {
+  .presentation--main {
+    background-image: url("../img/presentaion-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 @media (min-width: 768px) {
   .presentation--main {
     background-image: url("../img/presentation-tablet.png");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-color: #f9f9f9;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .presentation--main {
+    background-image: url("../img/presentation-tablet@2x.jpg");
+    background-size: contain;
+  }
+}
+@media (min-width: 1150px) {
+  .presentation--main {
+    background-image: url("../img/presentation-desktop.png");
+  }
+}
+@media (min-width: 1150px) and (min-resolution: 2dppx) {
+  .presentation--main {
+    background-image: url("../img/presentation-desktop@2x.jpg");
+    background-size: contain;
   }
 }
 
@@ -1167,10 +1187,12 @@ img {
   padding-bottom: 30px;
 }
 
-.catalog__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 52px;
+@media (min-width: 1150px) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 52px;
+  }
 }
 
 @media (min-width: 768px) {
