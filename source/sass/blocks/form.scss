@@ -25,9 +25,16 @@
 
 .form__container {
   @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 103px;
+    grid-template-columns: 167px 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: 114px 1fr;
+    padding: 49px 111px;
   }
 }
 
@@ -217,7 +224,7 @@
     width: 24px;
     height: 16px;
 
-    background-image: url("../img/svg/tick.svg");
+    background-image: url("../img/svg/mark.svg");
 
     transform: translate(-50%, -50%);
 
