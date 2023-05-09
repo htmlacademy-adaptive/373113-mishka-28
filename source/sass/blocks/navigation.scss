@@ -27,8 +27,6 @@
   }
 }
 
-
-
 .header .navigation {
   @media (min-width: 768px) {
     background-color: #f9f9f9;
@@ -72,15 +70,25 @@
   top: 32px;
   right: 51px;
   width: 20px;
-  height: 2px;
+  height: 14px;
   z-index: 2;
   cursor: pointer;
   border: none;
-  background-color: #231f20;
-  box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
+  background: none;
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #231f20;
+    box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
   }
 }
 
@@ -302,9 +310,9 @@
   }
 }
 
-.navigation--opened .navigation__toggle {
+.navigation--opened .navigation__toggle::after {
   @media (max-width: 767px) {
-    top: 29px;
+    top: -3px;
     right: 51px;
     width: 21px;
     height: 20px;
