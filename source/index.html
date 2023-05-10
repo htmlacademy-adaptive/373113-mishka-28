@@ -123,7 +123,12 @@
               </div>
             </dl>
             <div class="promo__image">
-              <img src="img/promo-image.jpg" srcset="img/promo-image@2x.jpg 2x" alt="фото вязанной корзинки" width="260" height="315">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="фото вязанной корзинки" width="260" height="315">
+              </picture>
+
             </div>
             <div class="promo__cost-order">
               <span class="promo__cost">Цена: 990 руб.</span>

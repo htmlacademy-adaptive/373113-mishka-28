@@ -1,6 +1,9 @@
 
 .process {
-  padding: 30px 30px;
+  padding: 0 30px;
+  @media (min-width: 768px) {
+    padding: 23px 50px 41px 50px;
+  }
 }
 
 .process__container {

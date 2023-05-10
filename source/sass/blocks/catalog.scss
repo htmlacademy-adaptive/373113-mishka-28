@@ -1,9 +1,13 @@
 .catalog {
   padding: 30px 0;
+
 }
 
-.catalog__item {
+.catalog__item:not(:last-child) {
   padding-bottom: 30px;
+  @media (min-width: 1150px) {
+    padding: 0;
+  }
 }
 
 .catalog__list {

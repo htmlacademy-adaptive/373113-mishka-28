@@ -22,7 +22,7 @@
 .form__container {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 167px auto;
+    grid-template-columns: 167px 1fr;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -34,6 +34,7 @@
 }
 
 .form__group--contacts .form__container {
+  margin-bottom: 35px;
   @media (min-width: 768px) {
     padding: 0 50px;
     display: grid;
@@ -102,7 +103,7 @@
 
   @media (min-width: 1150px) {
     display: grid;
-    grid-template-columns: repeat(3, 248px);    
+    grid-template-columns: repeat(3, 248px);
     gap: 24px 14px;
   }
 }
@@ -110,9 +111,6 @@
 .form__group--name .form__list {
   @media (max-width: 767px) {
     margin: 29px 0 34px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
   }
 
   @media (min-width: 768px) {
@@ -125,6 +123,7 @@
 .form__group--name .form__input-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 22px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -146,14 +145,6 @@
   @media (min-width: 768px) {
     display: grid;
     row-gap: 24px;
-  }
-}
-
-.form__group--textarea .form__container {
-  @media (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
   }
 }
 
@@ -283,8 +274,6 @@
 .form__label-contacts {
   position: relative;
 
-  display: flex;
-
   @media (min-width: 1150px) {
     max-width: 700px;
   }
@@ -307,17 +296,16 @@
   &::after {
     content: "";
     right: 3px;
-
+    top: 12px;
     width: 25px;
     height: 24px;
-
     mask-image: url("../img/svg/icon-phone.svg");
 
     @media (min-width: 768px) and (max-width: 1149px) {
       right: 27px;
     }
 
-    @media (max-width: 1150px) {
+    @media (min-width: 1150px) {
       right: 8px;
     }
   }
@@ -330,7 +318,7 @@
 
   &::after {
     right: 15px;
-
+    top: 12px;
     width: 32px;
     height: 21px;
 
@@ -353,6 +341,7 @@
   border: 2px solid #444444;
 
   resize: none;
+  margin-top: 23px;
 }
 
 .form__notice {
