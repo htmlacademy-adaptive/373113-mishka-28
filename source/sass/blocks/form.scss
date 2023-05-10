@@ -96,15 +96,13 @@
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 52px);
     gap: 21px;
     padding: 0;
   }
 
   @media (min-width: 1150px) {
     display: grid;
-    grid-template-columns: repeat(3, 248px);
-    grid-template-rows: repeat(2, 52px);
+    grid-template-columns: repeat(3, 248px);    
     gap: 24px 14px;
   }
 }
