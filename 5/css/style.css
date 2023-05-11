@@ -446,6 +446,134 @@ img {
   }
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+
+.modal--close {
+  display: none;
+}
+
+.modal__container {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+  border-top: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 #00010140;
+  margin-top: 100px;
+  padding: 28px 30px 46px 30px;
+}
+@media (min-width: 768px) {
+  .modal__container {
+    margin: auto 13%;
+    margin-top: 100px;
+    border: 1px solid #c6c6c6;
+    padding: 37px 92px 46px 92px;
+    box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  }
+}
+@media (min-width: 1150px) {
+  .modal__container {
+    margin: auto 25%;
+    margin-top: 100px;
+  }
+}
+
+.modal__title {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 14px;
+}
+@media (min-width: 768px) {
+  .modal__title {
+    line-height: 57px;
+    font-size: 30px;
+  }
+}
+
+.modal__description {
+  line-height: 30px;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+}
+@media (min-width: 768px) {
+  .modal__description {
+    font-size: 17px;
+  }
+}
+
+.modal__list {
+  display: grid;
+  grid-template-columns: repeat(3, 82px);
+  column-gap: 7px;
+  margin-bottom: 31px;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .modal__list {
+    grid-template-columns: repeat(3, 112px);
+  }
+}
+
+.modal__item {
+  height: 52px;
+  width: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .modal__item {
+    height: 52px;
+    width: 112px;
+  }
+}
+
+.modal__label {
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 17px;
+}
+
+.modal__input--checked {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal__input--radio[type=radio]:checked + .modal__input--checked {
+  border: 2px solid #63d1bb;
+}
+
+.modal__button {
+  background-color: #63d1bb;
+  border: none;
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 17px;
+  color: white;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 .container {
   width: 100%;
   max-width: 1150px;
@@ -459,7 +587,7 @@ img {
 }
 @media (min-width: 1150px) {
   .container {
-    padding: 0 97px;
+    padding: 0 50px;
   }
 }
 
@@ -763,7 +891,6 @@ img {
 }
 @media (min-width: 1150px) {
   .promo__image {
-    grid-row: 1/span 5;
     width: 525px;
     max-width: 100%;
     height: 636px;
@@ -882,6 +1009,12 @@ img {
     background-image: url("../img/reviews-fon.jpg");
     background-repeat: no-repeat;
     padding-top: 83px;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .reviews__container {
+    background-image: url("../img/reviews-fon@2x.jpg");
+    background-size: 350px auto;
   }
 }
 
@@ -1197,8 +1330,13 @@ img {
   padding: 30px 0;
 }
 
-.catalog__item {
+.catalog__item:not(:last-child) {
   padding-bottom: 30px;
+}
+@media (min-width: 1150px) {
+  .catalog__item:not(:last-child) {
+    padding: 0;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -1212,7 +1350,7 @@ img {
 @media (min-width: 768px) {
   .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 334px 1fr;
   }
 }
 @media (min-width: 1150px) {
@@ -1324,7 +1462,12 @@ img {
 }
 
 .process {
-  padding: 30px 30px;
+  padding: 0 30px;
+}
+@media (min-width: 768px) {
+  .process {
+    padding: 23px 50px 41px 50px;
+  }
 }
 
 .process__container {
@@ -1439,7 +1582,7 @@ img {
 }
 @media (min-width: 768px) {
   .video {
-    height: 668px;
+    height: 455px;
   }
 }
 @media (min-width: 1150px) {
@@ -1524,7 +1667,7 @@ img {
 @media (min-width: 768px) {
   .form__container {
     display: grid;
-    grid-template-columns: 167px auto;
+    grid-template-columns: 167px 1fr;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -1536,6 +1679,9 @@ img {
   }
 }
 
+.form__group--contacts .form__container {
+  margin-bottom: 35px;
+}
 @media (min-width: 768px) {
   .form__group--contacts .form__container {
     padding: 0 50px;
@@ -1602,7 +1748,6 @@ img {
   .form__group--checkbox .form__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 52px);
     gap: 21px;
     padding: 0;
   }
@@ -1611,7 +1756,6 @@ img {
   .form__group--checkbox .form__list {
     display: grid;
     grid-template-columns: repeat(3, 248px);
-    grid-template-rows: repeat(2, 52px);
     gap: 24px 14px;
   }
 }
@@ -1619,9 +1763,6 @@ img {
 @media (max-width: 767px) {
   .form__group--name .form__list {
     margin: 29px 0 34px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
   }
 }
 @media (min-width: 768px) {
@@ -1633,8 +1774,7 @@ img {
 }
 
 .form__group--name .form__input-group {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 22px;
 }
 @media (min-width: 768px) {
   .form__group--name .form__input-group {
@@ -1657,14 +1797,6 @@ img {
   .form__group.form__group--contacts {
     display: grid;
     row-gap: 24px;
-  }
-}
-
-@media (max-width: 767px) {
-  .form__group--textarea .form__container {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
   }
 }
 
@@ -1786,7 +1918,6 @@ img {
 
 .form__label-contacts {
   position: relative;
-  display: flex;
 }
 @media (min-width: 1150px) {
   .form__label-contacts {
@@ -1809,6 +1940,7 @@ img {
 .form__label-contacts--tel::after {
   content: "";
   right: 3px;
+  top: 12px;
   width: 25px;
   height: 24px;
   -webkit-mask-image: url("../img/svg/icon-phone.svg");
@@ -1819,7 +1951,7 @@ img {
     right: 27px;
   }
 }
-@media (max-width: 1150px) {
+@media (min-width: 1150px) {
   .form__label-contacts--tel::after {
     right: 8px;
   }
@@ -1832,6 +1964,7 @@ img {
 }
 .form__label-contacts--mail::after {
   right: 15px;
+  top: 12px;
   width: 32px;
   height: 21px;
   -webkit-mask-image: url("../img/svg/icon-mail.svg");
@@ -1853,6 +1986,7 @@ img {
   padding: 15px;
   border: 2px solid #444444;
   resize: none;
+  margin-top: 23px;
 }
 
 .form__notice {
