@@ -283,31 +283,39 @@
         </div>
       </footer>
 
-      <div class="modal">
-        <div class="modal__container container">
-          
+      <div class="modal modal--close">
+        <div class="modal__container ">
+
           <section class="modal__content">
             <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
             <p class="modal__description">Выберите размер:</p>
 
             <ul class="modal__list list-reset">
               <li class="modal__item">
-                <input class="modal__input-control modal__input-control--radio" type="radio" name="size" id="s" value="interior" checked>
-                <label class="modal__label" for="s">S</label>
+                <label class="modal__label">S
+                  <input class="visually-hidden modal__input--radio" type="radio" name="size" id="s" value="interior" checked>
+                  <span class="modal__input--checked"></span>
+                </label>
+              </li>
+
+              <li class="modal__item">
+                <label class="modal__label">M
+                  <input class="visually-hidden modal__input--radio" type="radio" name="size" id="s" value="interior" checked>
+                  <span class="modal__input--checked"></span>
+                </label>
               </li>
               <li class="modal__item">
-                <input class="modal__input-control modal__input-control--radio" type="radio" name="size" id="m" value="toy">
-                <label class="modal__label" for="m">M</label>
+                <label class="modal__label">L
+                  <input class="visually-hidden modal__input--radio" type="radio" name="size" id="s" value="interior" checked>
+                  <span class="modal__input--checked"></span>
+                </label>
               </li>
-              <li class="modal__item">
-                <input class="fmodal__input-control modal__input-control--radio" type="radio" name="size" id="l" value="toy">
-                <label class="modal__label" for="l">L</label>
-              </li>
-            </ul>                
+            </ul>
+
             <button class="button modal__button">
               Добавить
               </button>
-              
+
           </section>
         </div>
       </div>

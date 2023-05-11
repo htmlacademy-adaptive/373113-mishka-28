@@ -35,6 +35,7 @@
 
 .form__group--contacts .form__container {
   margin-bottom: 35px;
+
   @media (min-width: 768px) {
     padding: 0 50px;
     display: grid;
@@ -121,8 +122,6 @@
 }
 
 .form__group--name .form__input-group {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 22px;
 
   @media (min-width: 768px) {
