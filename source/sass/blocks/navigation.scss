@@ -18,8 +18,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 21px 19px;
     padding: 0;
-
-    background-color: #f9f9f9;
     border: none;
   }
 
@@ -29,9 +27,15 @@
   }
 }
 
-.header--home .nav {
+.header .navigation {
   @media (min-width: 768px) {
     background-color: #f9f9f9;
+  }
+}
+
+.header--page .navigation {
+  @media (min-width: 768px) {
+    background-color: #f1f1f1;
   }
 }
 
@@ -66,15 +70,27 @@
   top: 32px;
   right: 51px;
   width: 20px;
-  height: 2px;
+  height: 14px;
   z-index: 2;
   cursor: pointer;
   border: none;
-  background-color: #231f20;
-  box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
+  background: transparent;
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("../img/svg/menu.svg");
+    background-repeat: no-repeat;
+    box-shadow: none;
   }
 }
 
@@ -296,9 +312,9 @@
   }
 }
 
-.navigation--opened .navigation__toggle {
+.navigation--opened .navigation__toggle::after {
   @media (max-width: 767px) {
-    top: 29px;
+    top: -3px;
     right: 51px;
     width: 21px;
     height: 20px;

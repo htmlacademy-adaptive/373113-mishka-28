@@ -1,6 +1,11 @@
 .order {
   padding-top: 17px;
   padding-bottom: 55px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 50px;
+    padding-top: 49px;
+  }
 }
 
 .order__description {
