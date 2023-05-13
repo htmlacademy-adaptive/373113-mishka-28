@@ -69,16 +69,13 @@
   top: 29px;
   right: 31px;
   z-index: 10;
-
-  width: 20px;  
+  width: 20px;
   height: 20px;
   padding: 0;
-
   background-color: transparent;
   background-image: url("../img/svg/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
-  
   cursor: pointer;
   border: none;
 
@@ -89,7 +86,7 @@
 
 .navigation--opened .navigation__toggle {
   @media (max-width: 767px) {
-    background-image: url("../img/svg/icon-menu-close.svg");    
+    background-image: url("../img/svg/icon-menu-close.svg");
   }
 }
 
