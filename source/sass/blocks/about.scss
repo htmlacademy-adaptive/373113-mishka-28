@@ -38,32 +38,38 @@
   }
 
   &--flower {
-    background-image: url("../img/svg/icon-flower.svg");
+    background-image: url("../img/sprite.svg#icon-flower");
     background-position: top left 8px;
+    background-size: 33px 38px;
   }
 
   &--banknote {
-    background-image: url("../img/svg/icon-banknote.svg");
+    background-image: url("../img/sprite.svg#icon-banknote");
     background-position: top left 8px;
+    background-size: 47px 27px;
   }
 
   &--heart {
-    background-image: url("../img/svg/icon-heart.svg");
+    background-image: url("../img/sprite.svg#icon-heart");
     background-position: top left 8px;
+    background-size: 34px 27px;
   }
 
   &--knot {
-    background-image: url("../img/svg/icon-knot.svg");
+    background-image: url("../img/sprite.svg#icon-knot");
     background-position: top left 8px;
+    background-size: 35px 34px;
   }
 
   &--rocket {
-    background-image: url("../img/svg/icon-rocket.svg");
+    background-image: url("../img/sprite.svg#icon-rocket");
     background-position: top left 8px;
+    background-size: 55px 23px;
   }
 
   &--gift {
-    background-image: url("../img/svg/icon-gift.svg");
+    background-image: url("../img/sprite.svg#icon-gift");
     background-position: top left 8px;
+    background-size: 33px 32px;
   }
 }

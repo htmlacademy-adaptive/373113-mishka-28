@@ -73,7 +73,8 @@
   height: 20px;
   padding: 0;
   background-color: transparent;
-  background-image: url("../img/svg/icon-menu.svg");
+  background-image: url("../img/sprite.svg#icon-menu");
+  background-size: 20px 14px;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -86,7 +87,8 @@
 
 .navigation--opened .navigation__toggle {
   @media (max-width: 767px) {
-    background-image: url("../img/svg/icon-menu-close.svg");
+    background-image: url("../img/sprite.svg#icon-menu-close");
+    background-size: 21px 20px;
   }
 }
 

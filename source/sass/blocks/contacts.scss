@@ -39,7 +39,7 @@
 .contacts__title::after {
   @media (min-width: 768px) {
     content: "";
-    background-image: url("../img/svg/flag.svg");
+    background-image: url("../img/sprite.svg#icon-flag");
     width: 47px;
     height: 81px;
     display: block;
