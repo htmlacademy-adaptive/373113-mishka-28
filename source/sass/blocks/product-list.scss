@@ -29,30 +29,37 @@
     font-size: 20px;
     padding-left: 36px;
   }
-}
 
-.product-list__link span {
-  display: block;
-  max-width: 130px;
-}
+  & svg {
+    position: absolute;
+    right: 36px;
+    top: 30px;
 
+    opacity: 0.5;
 
-.product-list__link svg {
-  position: absolute;
-  right: 36px;
-  bottom: 20px;
-
-  opacity: 0.5;
-
-  @media (min-width: 768px) {
-    bottom: 27px;
+    @media (min-width: 768px) {
+      bottom: 27px;
+    }
   }
-}
 
-.product-list__item--toys svg {
-  right: 27px;
+  &:hover {
+    padding-bottom: 38px;
+  }
+
+  &:hover  svg {
+    opacity: 0.7;
+  }
+
+  & span {
+    display: block;
+    max-width: 130px;
+  }
+
+  &--toys svg {
+    right: 27px;
 
   @media (min-width: 768px) {
     right: 33px;
+  }
   }
 }

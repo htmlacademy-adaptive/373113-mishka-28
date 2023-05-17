@@ -71,12 +71,13 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/svg/*.svg' ,'!source/img/sprite/*.svg'])
+  gulp.src(['source/img/**/*.svg' ,'!source/img/sprite/*.svg'])
   .pipe(svgo())
-  .pipe(gulp.dest('build/img/svg'));
+  .pipe(gulp.dest('build/img/'));
 
 const stack = () => {
   return gulp.src(`source/img/sprite/*.svg`)
+  .pipe(svgo())
   .pipe(stacksvg())
   .pipe(rename('sprite.svg'))
 	.pipe(gulp.dest(`build/img`));
@@ -88,6 +89,7 @@ const stack = () => {
 const copy = (done) => {
   gulp.src([
     'sorce/fonts/*.{woff2,woff}',
+    'source/manifest.webmanifest',
     'source/*.ico'
   ], {
     base:'source'

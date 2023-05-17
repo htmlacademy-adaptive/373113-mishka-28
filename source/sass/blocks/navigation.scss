@@ -252,6 +252,10 @@
       padding: 33px 35px 31px 83px;
     }
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .navigation__link svg {
@@ -274,6 +278,10 @@
     align-items: center;
     padding: 33px 41px 30px;
   }
+}
+
+.navigation__link:hover svg {
+  fill: #63d1bb;
 }
 
 .navigation__link--search span {
