@@ -75,6 +75,14 @@
     margin: auto;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   border: 1px solid #ececec;
   cursor: pointer;
 

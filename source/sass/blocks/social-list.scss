@@ -20,3 +20,12 @@
 .social-list__link svg {
   fill: currentColor;
 }
+
+.social-list__link:hover svg {
+  fill: #46c1ae;  
+}
+
+
+.social-list__link:active svg {
+  opacity: 0.3;  
+}

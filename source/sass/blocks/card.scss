@@ -44,10 +44,26 @@
   @media (min-width: 1150px) {
     padding: 27px 27px 25px;
   }
+
+  &:hover {
+    box-shadow: 0px 6px 10px 0px #0000001A;
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0px #0000001A;
+  }
 }
 
 .card__title-link {
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__title {
@@ -102,4 +118,12 @@
 
 .card__cart svg {
   fill: currentColor;
+}
+
+.card__cart:hover svg {
+  fill: #63D1BB;
+}
+
+.card__cart:active svg {
+  opacity: 0.3;
 }

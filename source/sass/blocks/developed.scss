@@ -15,6 +15,15 @@
   line-height: 18px;
 }
 
-.developed svg {
-  fill: #63d1bb;
+.developed {
+  & svg {
+    fill: #63d1bb;
+  }
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }

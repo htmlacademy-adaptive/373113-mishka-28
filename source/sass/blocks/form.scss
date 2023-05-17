@@ -136,7 +136,7 @@
 }
 
 .form__group--name .form__input {
-  padding: 17px 23px 17px 0;
+  padding: 17px 23px 17px 16px;
 }
 
 .form__group--contacts {
@@ -186,6 +186,15 @@
   border: 2px solid #444444;
 
   appearance: none;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #444444;
+    opacity: 0.3;
+  }
 }
 
 .form__input-control--radio {
@@ -254,11 +263,17 @@
   border: none;
   border-bottom: 2px solid #000000;
 
+  &:hover {
+    border-color: #62d1ba;
+  }
+
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
 
-    opacity: 1;
+    opacity: 0.7;
   }
+
+  &:active {}
 }
 
 .form__label-contacts {

@@ -8,6 +8,14 @@
   @media (min-width: 768px) {
     display: block;
   }
+
+  &:hover {
+    fill:#46C1AE;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__container {
