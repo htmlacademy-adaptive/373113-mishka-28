@@ -10,7 +10,7 @@
   @media (min-width: 1150px) {
     padding-top: 54px;
   }
-}  
+}
 
 .promo__container {
   display: grid;
@@ -34,17 +34,15 @@
   &::after {
     @media (min-width: 768px) {
       content: "";
-      background-image: url('../img/svg/zigzag-line-desktop.svg');
+      background-image: url("../img/svg/zigzag-line-desktop.svg");
       height: 23px;
       width: 100%;
-       display: block;
+      display: block;
       bottom: 0;
       position: absolute;
     }
   }
 }
-
-
 
 .promo__title-container {
   @media (min-width: 768px) {

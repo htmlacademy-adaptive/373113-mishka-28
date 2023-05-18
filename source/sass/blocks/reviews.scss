@@ -27,8 +27,8 @@
 
   &::after {
     @media (min-width: 768px) {
-    content: "";
-      background-image: url('../img/svg/zigzag-line-desktop.svg');
+      content: "";
+      background-image: url("../img/svg/zigzag-line-desktop.svg");
       height: 23px;
       width: 100%;
       display: block;

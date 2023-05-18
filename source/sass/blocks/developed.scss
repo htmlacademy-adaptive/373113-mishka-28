@@ -5,6 +5,18 @@
   padding: 30px 0;
   color: #000000;
   text-decoration: none;
+
+  & svg {
+    fill: #63d1bb;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .developed__text {
@@ -13,17 +25,4 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
-}
-
-.developed {
-  & svg {
-    fill: #63d1bb;
-  }
-  &:hover svg {
-    fill: #46c1ae;
-  }
-
-  &:active svg {
-    opacity: 0.3;
-  }
 }
