@@ -50,6 +50,10 @@
     opacity: 0.7;
   }
 
+  &:active  svg {
+    opacity: 0.3;
+  }
+
   & span {
     display: block;
     max-width: 130px;

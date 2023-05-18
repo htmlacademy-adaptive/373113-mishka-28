@@ -28,10 +28,21 @@
   height: 77px;
 
   background-color: transparent;
-  background-image: url("../img/svg/icon-play.svg");
+  background-image: url("../img/sprite.svg#icon-play");
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  &:hover {
+    width: 121px;
+    height: 93px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+    opacity: 0.7;
+  }
 }

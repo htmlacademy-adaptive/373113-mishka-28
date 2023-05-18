@@ -262,6 +262,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
+  outline: none;
 
   &:hover {
     border-color: #62d1ba;
@@ -273,7 +274,9 @@
     opacity: 0.7;
   }
 
-  &:active {}
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .form__label-contacts {
@@ -304,7 +307,7 @@
     top: 12px;
     width: 25px;
     height: 24px;
-    mask-image: url("../img/svg/icon-phone.svg");
+    mask-image: url("../img/sprite.svg#icon-phone");
 
     @media (min-width: 768px) and (max-width: 1149px) {
       right: 27px;
@@ -314,7 +317,12 @@
       right: 8px;
     }
   }
+
+  &:hover::after {
+    background-color: #62d1ba;
+  }
 }
+
 
 .form__label-contacts--mail {
   @media (max-width: 767px) {
@@ -327,7 +335,7 @@
     width: 32px;
     height: 21px;
 
-    mask-image: url("../img/svg/icon-mail.svg");
+    mask-image: url("../img/sprite.svg#icon-mail");
 
     @media (min-width: 768px) and (max-width: 1149px) {
       right: 27px;
@@ -336,6 +344,10 @@
     @media (min-width: 1150px) {
       right: 4px;
     }
+  }
+
+  &:hover::after {
+    background-color: #62d1ba;
   }
 }
 

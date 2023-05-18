@@ -253,9 +253,7 @@
     }
   }
 
-  &:hover {
-    opacity: 0.6;
-  }
+  @include hover-active();
 }
 
 .navigation__link svg {
