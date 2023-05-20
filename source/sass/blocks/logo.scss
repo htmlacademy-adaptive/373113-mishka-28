@@ -12,12 +12,6 @@
     width: 149px;
     height: 72px;
   }
-}
-
-.logo__image {
-  display: block;
-  width: 100%;
-  height: 100%;
 
   &:hover, 
   &:focus {
@@ -27,4 +21,10 @@
   &:active {
     opacity: 0.3;
   }    
+}
+
+.logo__image {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
