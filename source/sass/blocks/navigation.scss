@@ -18,18 +18,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 21px 19px;
     padding: 0;
+    background-color: #f9f9f9;
     border: none;
   }
 
   @media (min-width: 1150px) {
     grid-template-columns: 1fr 149px 1fr;
     gap: 0;
-  }
-}
-
-.header .navigation {
-  @media (min-width: 768px) {
-    background-color: #f9f9f9;
   }
 }
 
@@ -83,19 +78,15 @@
   @media (min-width: 768px) {
     display: none;
   }
-}
 
-.navigation--opened .navigation__toggle {
-  @media (max-width: 767px) {
-    background-image: url("../img/sprite.svg#icon-menu-close");
-    background-size: 21px 20px;
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
   }
-}
 
-.navigation--opened .navigation__list--main,
-.navigation--opened .navigation__list--user {
-  @media (max-width: 767px) {
-    display: block;
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -122,7 +113,7 @@
 
     gap: 0;
     grid-column: 1/2;
-    padding-left: 0;
+    padding-left: 15px;
 
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -231,16 +222,12 @@
   line-height: 24px;
   font-size: 17px;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
   @media (min-width: 768px) {
     padding: 0;
-    border: none;
   }
 
   @media (min-width: 1150px) {
-    padding: 33px 35px 31px 0;
-    letter-spacing: 0.6px;
+    padding: 33px 35px 31px 35px;
   }
 
   &--icon {
@@ -254,14 +241,15 @@
     }
   }
 
-  &:hover, 
+  &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
+    outline: none;
   }
-    
+
   &:active {
     opacity: 0.3;
-  }    
+  }
 }
 
 .navigation__link svg {
@@ -286,7 +274,8 @@
   }
 }
 
-.navigation__link:hover svg {
+.navigation__link:hover svg,
+.navigation__link:focus svg {
   fill: #63d1bb;
 }
 
@@ -328,5 +317,40 @@
   @media (min-width: 1150px) {
     grid-column: 3/4;
     margin: 20px 50px 0 auto;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  @media (max-width: 767px) {
+    background-image: url("../img/sprite.svg#icon-menu-close");
+    background-size: 21px 20px;
+  }
+}
+
+.navigation--opened .navigation__list--main,
+.navigation--opened .navigation__list--user {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.no-js .navigation__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.no-js .navigation {
+  @media (max-width: $mobile-width-only) {
+    position: static;
+
+    padding-top: 0;
+  }
+}
+
+.no-js .navigation__list--main,
+.no-js .navigation__list--user {
+  @media (max-width: $mobile-width-only) {
+    display: block;
   }
 }

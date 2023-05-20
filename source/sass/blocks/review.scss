@@ -1,18 +1,32 @@
 .review__text {
-  font-size: 15px;
-  margin: 0 0 33px;
+  margin: 0 0 35px;
 
   @media (min-width: 768px) {
     font-size: 17px;
-    margin: 0 0 61px;
+    margin: 0 0 57px;
+  }
+
+  @media (min-width: 1150px) {
+    margin: 0 0 46px;
+  }
+}
+
+.review__author {
+  @media (min-width: 768px) {
+    max-width: 500px;
   }
 }
 
 .review__author-name {
+  display: block;
+  margin-bottom: 3px;
   font-weight: 700;
   line-height: 24px;
   font-size: 17px;
-  display: block;
+
+  @media (min-width: 768px) and (max-width: 1149px) {
+    font-size: 18px;
+  }
 }
 
 .review__author-instagram {
@@ -22,6 +36,10 @@
 
 .review__item {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
 }
 
 .review__item--active {

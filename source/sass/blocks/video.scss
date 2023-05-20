@@ -8,7 +8,8 @@
   }
 
   @media (min-width: 1150px) {
-    height: 455px;
+    width: 683px;
+    height: 453px;
   }
 }
 
@@ -35,14 +36,14 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
 
-  &:hover {
-    width: 121px;
-    height: 93px;
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: translate(-50%, -50%) scale(1.2);
   }
 
   &:active {
-    width: 81px;
-    height: 62px;
-    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
   }
 }

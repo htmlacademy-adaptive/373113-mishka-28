@@ -4,11 +4,36 @@
   background-color: #f1f1f1;
 
   @media (min-width: 768px) {
-    padding-top: 101px;
+    position: relative;
+    padding: 58px 0 84px;
   }
 
   @media (min-width: 1150px) {
-    padding-top: 114px;
+    padding: 39px 0 112px;
+  }
+
+  &::after {
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      z-index: 1;
+
+      height: 24px;
+
+      background-image: url("../img/svg/zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: contain;
+    }
+
+    @media (min-width: 1150px) {
+      height: 34px;
+
+      background-image: url("../img/svg/zigzag-fill-desktop.svg");
+    }
   }
 }
 
@@ -18,11 +43,12 @@
   background-color: #f9f9f9;
   background-image: url("../img/presentation-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+
+  background-position: center top -17px;
+  background-size: auto 76%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/presentation-mobile@2x.jpg");
-    background-size: 320px auto;
   }
 
   @media (min-width: 768px) {
@@ -30,7 +56,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/presentation-tablet@2x.jpg");
-      background-size: contain;
     }
   }
 
@@ -39,7 +64,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/presentation-desktop@2x.jpg");
-      background-size: contain;
     }
   }
 }

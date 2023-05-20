@@ -1,14 +1,22 @@
 .promo {
-  padding-top: 31px;
-  padding-bottom: 36px;
-  position: relative;
+  padding-top: 30px;
+  padding-bottom: 42px;
+
+  background-image: url("../img/svg/zigzag-line-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
 
   @media (min-width: 768px) {
-    padding-top: 39px;
+    padding-top: 40px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: 1150px) {
     padding-top: 54px;
+    padding-bottom: 12px;
+
+    background: none;
   }
 }
 
@@ -34,12 +42,18 @@
   &::after {
     @media (min-width: 768px) {
       content: "";
-      background-image: url("../img/svg/zigzag-line-desktop.svg");
-      height: 23px;
-      width: 100%;
-      display: block;
-      bottom: 0;
       position: absolute;
+      right: 50px;
+      bottom: 0;
+      left: 50px;
+      z-index: 1;
+
+      height: 23px;
+
+      background-image: url("../img/svg/zigzag-line-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: contain;
     }
   }
 }
@@ -60,7 +74,12 @@
 }
 
 .promo__title {
+  margin-bottom: 4px;
   text-align: start;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: 1150px) {
     z-index: 1;
@@ -90,40 +109,47 @@
 }
 
 .promo__description {
-
+  margin: 0 0 5px;
   line-height: 24px;
-
-  margin: 0 0 28px;
 
 
   @media (min-width: 768px) {
     line-height: 30px;
     font-size: 17px;
   }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 20px;
+  }
 }
 
 .promo__specification {
   margin: 0;
-  padding: 0;
 }
 
 .promo__cost-order {
-  display: flex;
-  flex-direction: column;
-  grid-row: 4/span 2;
-  justify-content: space-between;
+  @media (min-width: 768px) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-top: 74px;
+  }
 }
 
 .promo__cost {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   font-weight: 700;
   line-height: 24px;
   font-size: 17px;
-  color: #444444;
+  text-align: center;
 
   @media (min-width: 768px) {
-    text-align: center;
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
