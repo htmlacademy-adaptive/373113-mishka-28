@@ -21,6 +21,16 @@
   @media (min-width: 1150px) {
     height: 462px;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__image img {
@@ -44,14 +54,15 @@
   @media (min-width: 1150px) {
     padding: 27px 27px 25px;
   }
+}
 
-  &:hover {
-    box-shadow: 0 6px 10px 0 #0000001a;
-  }
+.card:hover .card__container,
+.card:focus-within .card__container {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
 
-  &:active {
-    box-shadow: 0 3px 5px 0 #0000001a;
-  }
+.card:active .card__container {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card__title-link {
@@ -74,12 +85,14 @@
   line-height: 24px;
   color: #000000;
 
-  @media (min-width: 1150px) {
+  @media (min-width: 780px) {
     font-size: 20px;
   }
 }
 
 .card__param {
+  margin-top: 5px;
+  margin-bottom: 17px;
   font-size: 13px;
 
   @media (min-width: 768px) {
@@ -114,16 +127,21 @@
   height: 19px;
 
   color: rgba(0, 0, 0, 0.2);
+
+  &:hover,
+  &:focus {
+    color: #63d1bb;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__cart svg {
+  width: 100%;
+  height: 100%;
   fill: currentColor;
-}
-
-.card__cart:hover svg {
-  fill: #63d1bb;
-}
-
-.card__cart:active svg {
-  opacity: 0.3;
 }

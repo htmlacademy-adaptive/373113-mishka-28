@@ -20,9 +20,18 @@
     font-size: 17px;
   }
 
-  &:hover {
-    background-color: #444444;
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
     color: #ffffff;
+
+    background-color: #444444;
+    outline: none;
   }
 
   &:active {

@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>HTML Academy: Мишка</title>    
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body no-js">
 
@@ -41,16 +43,16 @@
           <ul class="navigation__list navigation__list--user list-reset">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--icon navigation__link--search" href="#">
-                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m17.693 16.057-3.477-3.477c1.023-1.33 1.534-2.966 1.534-4.705C15.75 3.477 12.273 0 7.875 0S0 3.477 0 7.875s3.477 7.875 7.875 7.875c1.739 0 3.375-.614 4.704-1.534l3.478 3.477c.204.205.409.307.818.307.614 0 1.125-.511 1.125-1.125 0-.204-.102-.511-.307-.818ZM2.25 7.875c0-3.068 2.557-5.625 5.625-5.625S13.5 4.807 13.5 7.875 10.943 13.5 7.875 13.5 2.25 10.943 2.25 7.875Z"/>
+                <svg aria-hidden="true" focusable="false" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
                 <span>Поиск по сайту</span>
               </a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--icon navigation__link--card" href="#">
-                <svg aria-hidden="true" focusable="false" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"/>
+                <svg aria-hidden="true" focusable="false" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
                 <span>Корзина: пока пуста</span>
               </a>
@@ -127,9 +129,8 @@
                   <div class="card__buy">
                     <span class="card__price">690 руб.</span>
                     <a class="card__cart" href="#">
-                      <svg aria-hidden="true" focusable="false"
-                      width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"/>
+                      <svg aria-hidden="true" focusable="false" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
                       </svg>
                       <span class="visually-hidden">В корзину</span>
                     </a>
@@ -148,16 +149,15 @@
                 <div class="card__container">
                   <div class="card__description">
                     <a class="card__title-link" href="#">
-                      <h3 class="card__title">Большая корзинка для игрушек</h3>
+                      <h3 class="card__title">Большая корзинка для&nbsp;игрушек</h3>
                     </a>
                     <p class="card__param">Диаметр 30 см, высота 30 см</p>
                   </div>
                   <div class="card__buy">
                     <span class="card__price">1 500 руб.</span>
                     <a class="card__cart" href="#">
-                      <svg aria-hidden="true" focusable="false"
-                      width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"/>
+                      <svg aria-hidden="true" focusable="false" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#icon-cart"></use>
                       </svg>
                       <span class="visually-hidden">В корзину</span>
                     </a>
@@ -229,12 +229,38 @@
           </ul>
           <a class="developed" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="developed__text">Разработано</span>
-            <svg aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+            <svg aria-hidden="true" focusable="false" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>
           </a>
         </div>
       </footer>
+
+      <!-- Модальное окно -->
+      <div class="modal modal--close">
+        <div class="modal__container size">
+          <h2 class="size__title">Добавить в&nbsp;корзину</h2>
+          <p class="size__text">Выберите размер:</p>
+
+          <form class="size__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="size__container">
+              <div class="size__item">
+                <input class="visually-hidden size__input" type="radio" name="size" id="size-s" value="size-s" checked>
+                <label class="size__label" for="size-s">S</label>
+              </div>
+              <div class="size__item">
+                <input class="visually-hidden size__input" type="radio" name="size" id="size-m" value="size-m">
+                <label class="size__label" for="size-m">M</label>
+              </div>
+              <div class="size__item">
+                <input class="visually-hidden size__input" type="radio" name="size" id="size-l" value="size-m">
+                <label class="size__label" for="size-l">L</label>
+              </div>
+            </div>
+            <button class="button size__submit" type="submit">Добавить</button>
+          </form>
+        </div>
+      </div>
       <script src="js/script.js"></script>
   </body>
 </html>
