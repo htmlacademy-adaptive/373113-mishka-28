@@ -1,15 +1,15 @@
 .promo {
-  padding-top: 30px;
+  padding-top: 31px;
   padding-bottom: 42px;
 
-  background-image: url("../img/svg/zigzag-line-desktop.svg");
+  background-image: url("../img/svg/zigzag-desktop.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
 
   @media (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 67px;
+    padding-top: 41px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: 1150px) {
@@ -23,7 +23,7 @@
 .promo__container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 17px;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -35,8 +35,8 @@
 
     grid-template-columns: 1fr 525px;
     gap: 35px 60px;
-    padding-bottom: 60px;
-    padding-left: 226px;
+    padding-bottom: 62px;
+    padding-left: 225px;
   }
 
   &::after {
@@ -50,7 +50,7 @@
 
       height: 23px;
 
-      background-image: url("../img/svg/zigzag-line-desktop.svg");
+      background-image: url("../img/svg/zigzag-desktop.svg");
       background-repeat: no-repeat;
       background-position: center bottom;
       background-size: contain;
@@ -139,7 +139,7 @@
 
 .promo__cost {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   font-weight: 700;
   line-height: 24px;
   font-size: 17px;
@@ -157,7 +157,7 @@
   width: 100%;
   max-width: 350px;
   height: 315px;
-  margin: 12px auto;
+  margin: 13px auto;
 
   @media (min-width: 768px) {
     grid-column: span 1/-1;

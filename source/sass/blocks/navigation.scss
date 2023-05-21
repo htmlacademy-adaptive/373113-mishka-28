@@ -103,7 +103,7 @@
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 38px;
+    gap: 37px;
     justify-content: start;
     padding-left: 50px;
   }
@@ -177,10 +177,10 @@
   @media (min-width: 1150px) {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 20px 63px;
+    gap: 20px 62px;
     grid-column: 1/2;
     justify-content: start;
-    padding: 19px 0 19px 50px;
+    padding: 19px 0 19px 51px;
   }
 }
 
@@ -215,7 +215,7 @@
   position: relative;
 
   display: block;
-  padding: 30px 30px 25px 75px;
+  padding: 29px 30px 26px 76px;
   text-decoration: none;
   color: #000000;
   font-weight: 700;
@@ -233,7 +233,7 @@
   &--icon {
     @media (min-width: 768px) {
       min-height: 87px;
-      padding: 33px 49px 30px 82px;
+      padding: 33px 50px 31px 83px;
     }
 
     @media (min-width: 1150px) {
@@ -255,7 +255,7 @@
 .navigation__link svg {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 31px;
 
   width: 21px;
   height: 18px;
@@ -316,7 +316,7 @@
 
   @media (min-width: 1150px) {
     grid-column: 3/4;
-    margin: 20px 50px 0 auto;
+    margin: 20px 51px 0 auto;
   }
 }
 

@@ -88,7 +88,7 @@ const stack = () => {
 
 const copy = (done) => {
   gulp.src([
-    'sorce/fonts/*.{woff2,woff}',
+    'source/fonts/*.{woff2,woff}',
     'source/manifest.webmanifest',
     'source/*.ico'
   ], {

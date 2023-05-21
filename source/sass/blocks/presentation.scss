@@ -1,15 +1,15 @@
 .presentation {
-  padding: 73px 0;
+  padding: 72px 0;
 
   background-color: #f1f1f1;
 
   @media (min-width: 768px) {
     position: relative;
-    padding: 58px 0 84px;
+    padding: 109px 0 84px;
   }
 
   @media (min-width: 1150px) {
-    padding: 39px 0 112px;
+    padding: 96px 0 112px;
   }
 
   &::after {
@@ -23,7 +23,7 @@
 
       height: 24px;
 
-      background-image: url("../img/svg/zigzag-fill.svg");
+      background-image: url("../img/svg/zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
       background-position: center;
       background-size: contain;
@@ -53,6 +53,8 @@
 
   @media (min-width: 768px) {
     background-image: url("../img/presentation-tablet.jpg");
+    background-position: center top -46px;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/presentation-tablet@2x.jpg");
@@ -61,6 +63,7 @@
 
   @media (min-width: 1150px) {
     background-image: url("../img/presentation-desktop.jpg");
+    background-position: center top -62px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/presentation-desktop@2x.jpg");

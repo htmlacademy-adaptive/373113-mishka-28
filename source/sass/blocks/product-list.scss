@@ -21,7 +21,7 @@
   @media (min-width: 768px) {
     line-height: 30px;
     font-size: 20px;
-    padding: 26px 115px 45px 36px;
+    padding: 25px 115px 45px 36px;
   }
 
   @media (min-width: 1150px) {
@@ -36,7 +36,6 @@
       transform: translateY(-5px);
     }
   }
-
 }
 
 .product-list__item:nth-child(2n) .product-list__link {
@@ -47,7 +46,6 @@
     @media (min-width: 768px) {
       background-color: #46c1ae;
     }
-    // outline: none;
   }
 }
 
@@ -59,7 +57,7 @@
 .product-list__link svg {
   position: absolute;
   right: 36px;
-  bottom: 20px;
+  bottom: 18px;
 
   opacity: 0.5;
 
@@ -68,13 +66,24 @@
   @media (min-width: 768px) {
     bottom: 39px;
   }
+
+  @media (min-width: 1150px) {
+    bottom: 44px;
+  }
 }
 
 .product-list__item--toys svg {
   right: 27px;
+  bottom: 22px;
 
   @media (min-width: 768px) {
     right: 33px;
+    bottom: 39px;
+  }
+
+  @media (min-width: 1150px) {
+    right: 35px;
+    bottom: 44px;
   }
 }
 

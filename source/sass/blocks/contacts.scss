@@ -1,12 +1,12 @@
 .contacts {
-  padding: 38px 0 40px;
+  padding: 38px 0 39px;
 
   @media (min-width: 768px) {
-    padding: 71px 0 57px;
+    padding: 68px 0 58px;
 
     background-image: url("../img/sprite.svg#icon-flag");
     background-repeat: no-repeat;
-    background-position: top 48px right 53px;
+    background-position: top 46px right 53px;
     background-size: 47px 81px;
   }
 
@@ -29,7 +29,7 @@
 }
 
 .contacts__text {
-  padding: 0 30px 32px;
+  padding: 0 29px 32px;
 
   @media (min-width: 768px) {
     padding: 0 50px 18px;
@@ -69,7 +69,7 @@
 .contacts__row {
   display: grid;
   grid-template-columns: 60px auto;
-  gap: 15px 17px;
+  gap: 15px 18px;
   margin-bottom: 30px;
 }
 
