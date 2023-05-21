@@ -5,6 +5,10 @@
   @media (min-width: 768px) {
     padding: 23px 50px 62px;
   }
+
+  @media (min-width: 1150px) {
+    padding-bottom: 105px;
+  }
 }
 
 .process__container {
@@ -33,10 +37,10 @@
 
 .process__title {
   margin: 0;
-  padding: 23px 15px 25px 90px;
+  padding: 20px 15px 26px 90px;
   background-image: url("../img/svg/icon-video.svg");
   background-repeat: no-repeat;
-  background-position: left 32px center;
+  background-position: left 33px top 33px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -69,7 +73,7 @@
   padding: 35px 32px 32px;
 
   @media (min-width: 768px) {
-    padding: 20px 41px 45px;
+    padding: 20px 39px 45px;
   }
 
   @media (min-width: 1150px) {
@@ -83,7 +87,7 @@
   font-size: 13px;
 
   @media (min-width: 768px) {
-
+    line-height: 30px;
     font-size: 15px;
   }
 

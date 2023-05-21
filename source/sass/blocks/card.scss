@@ -40,7 +40,7 @@
 }
 
 .card__container {
-  padding: 28px 28px 25px;
+  padding: 28px 27px 25px;
 
   border: 1px solid #ececec;
 
@@ -79,13 +79,12 @@
 
 .card__title {
   margin: 0;
-
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
 
-  @media (min-width: 780px) {
+  @media (min-width: 768px) {
     font-size: 20px;
   }
 }
@@ -96,6 +95,7 @@
   font-size: 13px;
 
   @media (min-width: 768px) {
+    margin-top: 7px;
     font-size: 15px;
   }
 }
@@ -104,9 +104,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 23px;
+  padding-top: 24px;
 
   border-top: 1px solid #ececec;
+
+  @media (min-width: 1150px) {
+    padding-top: 17px;
+  }
 }
 
 .card__price {

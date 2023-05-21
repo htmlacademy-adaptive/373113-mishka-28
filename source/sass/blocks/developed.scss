@@ -18,10 +18,18 @@
 
 .developed__text {
   display: inline-block;
-  margin-right: 26px;
+  margin-right: 25px;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 27px;
+  }
 }
 
 .developed svg {

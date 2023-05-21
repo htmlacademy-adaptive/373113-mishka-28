@@ -61,7 +61,7 @@
       content: "";
       position: absolute;
       right: 50px;
-      bottom: -92px;
+      bottom: -91px;
       left: 50px;
       z-index: 1;
 
@@ -112,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 104px;
+    bottom: 106px;
   }
 }
 
@@ -164,5 +164,9 @@
   @media (min-width: 768px) {
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+
+  @media (min-width: 768px) {
+    align-self: start;
   }
 }

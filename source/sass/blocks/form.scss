@@ -61,7 +61,7 @@
 .form__container {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 167px 1fr;
+    grid-template-columns: 168px 1fr;
   }
 
   @media (min-width: 1150px) {
@@ -132,7 +132,7 @@
   gap: 11px;
 
   @media (min-width: 768px) {
-    gap: 24px;
+    gap: 27px;
   }
 }
 
@@ -141,7 +141,7 @@
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 23px;
+    gap: 24px;
   }
 
   @media (min-width: 1150px) {
@@ -207,7 +207,7 @@
   appearance: none;
 
   @media (min-width: 768px) {
-    margin-right: 30px;
+    margin-right: 28px;
   }
 }
 
@@ -376,7 +376,8 @@
 .form__label-contacts--tel {
   &::after {
     // content: "";
-    right: 8px;
+    right: 7px;
+    top: 16px;
     width: 25px;
     height: 24px;
     mask-image: url("../img/sprite.svg#icon-phone");
@@ -390,7 +391,8 @@
 
 .form__label-contacts--mail {
   &::after {
-    right: 1px;
+    right: 3px;
+    top: 20px;
     width: 32px;
     height: 21px;
 
@@ -416,6 +418,7 @@
 
   @media (min-width: 768px) {
     margin: 0;
+    font-size: 17px;
   }
 }
 
