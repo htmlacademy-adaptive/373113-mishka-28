@@ -94,8 +94,14 @@
   background-color: #63d1bb;
   border: 2px solid #63d1bb;
 
-  &:hover {
-    background-color: #63d1bb;
-    border: 2px solid #63d1bb;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: #000000;
+  }
+
+  &:active {
+    background-color: rgba(99, 209, 187, 0.6);
+    color: #ffffff;
   }
 }
