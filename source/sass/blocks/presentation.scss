@@ -23,7 +23,7 @@
 
       height: 24px;
 
-      background-image: url("../img/svg/zigzag-fill-tablet.svg");
+      background-image: url("../img/svg/zigzag-fill--tablet.svg");
       background-repeat: repeat-x;
       background-position: center;
       background-size: contain;
@@ -32,7 +32,7 @@
     @media (min-width: 1150px) {
       height: 34px;
 
-      background-image: url("../img/svg/zigzag-fill-desktop.svg");
+      background-image: url("../img/svg/zigzag-fill--desktop.svg");
     }
   }
 }
