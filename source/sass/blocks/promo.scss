@@ -157,14 +157,14 @@
   width: 100%;
   max-width: 350px;
   height: 315px;
-  margin: 13px auto;
+  margin: 10px auto;
 
   @media (min-width: 768px) {
     grid-column: span 1/-1;
     grid-row: 2 / span 3;
     width: 334px;
     height: 404px;
-    margin-bottom: 0;
+    margin: 13px auto 0;
   }
 
   @media (min-width: 1150px) {

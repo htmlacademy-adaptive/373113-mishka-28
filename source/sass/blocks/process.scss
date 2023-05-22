@@ -37,14 +37,15 @@
 
 .process__title {
   margin: 0;
-  padding: 20px 15px 26px 90px;
-  background-image: url("../img/svg/icon-video.svg");
-  background-repeat: no-repeat;
-  background-position: left 33px top 33px;
+  padding: 22px 15px 26px 90px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+
+  background-image: url("../img/svg/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: left 33px top 33px;
 
   @media (min-width: 768px) {
     padding: 41px 15px 5px 105px;
