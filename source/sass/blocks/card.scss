@@ -1,6 +1,7 @@
 .card {
   @media (min-width: 768px) {
     display: grid;
+
     grid-template-columns: 334px 1fr;
   }
 
@@ -21,6 +22,16 @@
   @media (min-width: 1150px) {
     height: 462px;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__image img {
@@ -30,7 +41,7 @@
 }
 
 .card__container {
-  padding: 28px 28px 25px;
+  padding: 28px 27px 25px;
 
   border: 1px solid #ececec;
 
@@ -46,8 +57,25 @@
   }
 }
 
+.card:hover .card__container,
+.card:focus-within .card__container {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:active .card__container {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .card__title-link {
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__title {
@@ -58,15 +86,19 @@
   line-height: 24px;
   color: #000000;
 
-  @media (min-width: 1150px) {
+  @media (min-width: 768px) {
     font-size: 20px;
   }
 }
 
 .card__param {
+  margin: 5px 0 17px;
+
   font-size: 13px;
 
   @media (min-width: 768px) {
+    margin: 7px 0 11px;
+
     font-size: 15px;
   }
 }
@@ -75,9 +107,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 23px;
+  padding-top: 24px;
 
   border-top: 1px solid #ececec;
+
+  @media (min-width: 1150px) {
+    padding-top: 23px;
+  }
 }
 
 .card__price {
@@ -98,8 +134,22 @@
   height: 19px;
 
   color: rgba(0, 0, 0, 0.2);
+
+  &:hover,
+  &:focus {
+    color: #63d1bb;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__cart svg {
+  width: 100%;
+  height: 100%;
+
   fill: currentColor;
 }

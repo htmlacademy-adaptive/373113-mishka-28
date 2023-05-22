@@ -1,10 +1,18 @@
 .social-list {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 27px;
   justify-content: center;
   padding: 27px 0 31px;
+
   border-bottom: 1px solid #e5e5e5;
+
+  gap: 29px;
+  grid-template-columns: repeat(3, auto);
+
+  @media (min-width: 768px) {
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .social-list__link {
@@ -15,6 +23,19 @@
   height: 22px;
 
   color: #231f20;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social-list__link svg {

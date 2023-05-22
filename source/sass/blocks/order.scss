@@ -1,10 +1,14 @@
 .order {
   padding-top: 17px;
-  padding-bottom: 55px;
+  padding-bottom: 40px;
 
   @media (min-width: 768px) {
-    padding-bottom: 50px;
-    padding-top: 49px;
+    padding-bottom: 0;
+    padding-top: 56px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-top: 101px;
   }
 }
 
@@ -16,11 +20,10 @@
   @media (min-width: 768px) {
     font-size: 17px;
     line-height: 30px;
-    width: 668px;
-    margin: 0 auto;
   }
 
   @media (min-width: 1150px) {
     width: 702px;
+    margin-left: 175px;
   }
 }

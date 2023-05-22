@@ -8,7 +8,8 @@
   }
 
   @media (min-width: 1150px) {
-    height: 455px;
+    width: 683px;
+    height: 453px;
   }
 }
 
@@ -28,10 +29,21 @@
   height: 77px;
 
   background-color: transparent;
-  background-image: url("../img/svg/icon-play.svg");
+  background-image: url("../img/sprite.svg#icon-play");
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
