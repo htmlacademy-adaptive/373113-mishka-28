@@ -12,8 +12,9 @@
 
 .form__group {
   margin: 0;
-  border: none;
   padding: 15px 0;
+
+  border: none;
 
   @media (min-width: 768px) {
     padding: 50px 0;
@@ -28,13 +29,15 @@
 
 .form__group--contacts {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 35px;
   padding: 19px 0 20px;
 
+  gap: 35px;
+  grid-template-columns: 1fr;
+
   @media (min-width: 768px) {
-    gap: 22px;
     padding: 50px 0;
+
+    gap: 22px;
   }
 }
 
@@ -61,21 +64,24 @@
 .form__container {
   @media (min-width: 768px) {
     display: grid;
+
     grid-template-columns: 168px 1fr;
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: 114px 1fr;
     padding: 0 111px;
+
+    grid-template-columns: 114px 1fr;
   }
 }
 
 .form__group--submit-notice .form__container {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     align-items: center;
+
+    grid-template-columns: repeat(2, auto);
   }
 
   @media (min-width: 1150px) {
@@ -85,16 +91,17 @@
 
 .form__title {
   display: grid;
-  grid-template-columns: auto 1fr;
   align-items: center;
   margin: 0 0 24px;
 
   font-weight: 700;
-  line-height: 16px;
   font-size: 17px;
+  line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
   column-gap: 19px;
+
+  grid-template-columns: auto 1fr;
 
   @media (min-width: 768px) {
     display: block;
@@ -108,8 +115,10 @@
   &::after {
     @media (max-width: 767px) {
       content: "";
+
       width: 100%;
       height: 1px;
+
       background-color: #62d1ba;
     }
   }
@@ -125,6 +134,7 @@
 
 .form__list {
   display: grid;
+
   grid-template-columns: 1fr;
 }
 
@@ -140,13 +150,13 @@
   gap: 19px;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: repeat(3, 248px);
     gap: 24px 14px;
+    grid-template-columns: repeat(3, 248px);
   }
 }
 
@@ -173,9 +183,10 @@
 .form__input-group {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0 25px;
     align-items: center;
+
+    gap: 0 25px;
+    grid-template-columns: auto 1fr;
   }
 
   @media (min-width: 1150px) {
@@ -185,8 +196,8 @@
 
 .form__label {
   font-weight: 700;
-  line-height: 18px;
   font-size: 17px;
+  line-height: 18px;
   color: #000000;
 
   @media (min-width: 768px) {
@@ -276,7 +287,8 @@
   border-color: rgba(68, 68, 68, 0.3);
 }
 
-.form__input-control:disabled {
+.form__input-control:disabled,
+.form__input-control:disabled ~ span {
   opacity: 0.3;
 }
 
@@ -290,11 +302,13 @@
   margin: 0;
   padding-top: 11px;
   padding-bottom: 14px;
+
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   font-family: $font-family;
   color: #444444;
+
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
@@ -323,10 +337,6 @@
     opacity: 0.3;
   }
 
-  &:active {
-    border-color: #62d1ba;
-  }
-
   &--invalid {
     border-color: #ff0000;
   }
@@ -346,6 +356,7 @@
 
 .form__label-contacts {
   position: relative;
+
   display: block;
 
   @media (min-width: 1150px) {
@@ -356,6 +367,7 @@
     content: "";
     position: absolute;
     top: 18px;
+
     background-color: rgba(0, 0, 0, 0.2);
 
     @media (min-width: 1150px) {
@@ -375,11 +387,13 @@
 
 .form__label-contacts--tel {
   &::after {
+    top: 16px;
     // content: "";
     right: 7px;
-    top: 16px;
+
     width: 25px;
     height: 24px;
+
     mask-image: url("../img/sprite.svg#icon-phone");
 
     @media (min-width: 768px) and (max-width: 1149px) {
@@ -388,11 +402,11 @@
   }
 }
 
-
 .form__label-contacts--mail {
   &::after {
-    right: 3px;
     top: 20px;
+    right: 3px;
+
     width: 32px;
     height: 21px;
 
@@ -407,25 +421,30 @@
 .form__input--textarea {
   height: 142px;
   padding: 15px;
+
   border: 2px solid #444444;
+
   resize: none;
 }
 
 .form__notice {
   margin: 0 0 30px;
-  line-height: 16px;
+
   font-size: 14px;
+  line-height: 16px;
 
   @media (min-width: 768px) {
     margin: 0;
+
     font-size: 17px;
   }
 }
 
 .form__button {
   padding: 16px 20px;
-  line-height: 16px;
+
   font-size: 17px;
+  line-height: 16px;
 
   @media (min-width: 768px) {
     order: -1;

@@ -11,3 +11,16 @@ if (menuBtn) {
 if (document.querySelector('.no-js')) {
   document.querySelector('.no-js').classList.remove('no-js');
 };
+
+const btnModals = document.querySelectorAll('.button-order');
+const modal = document.querySelector('.modal');
+
+if (btnModals) {
+  btnModals.forEach((item) => {
+    item.addEventListener('click', function () {
+      if (modal) {
+        modal.classList.remove('modal--close');
+      }
+    })
+  })
+};

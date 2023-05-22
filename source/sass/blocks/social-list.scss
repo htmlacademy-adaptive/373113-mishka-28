@@ -1,10 +1,12 @@
 .social-list {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 29px;
   justify-content: center;
   padding: 27px 0 31px;
+
   border-bottom: 1px solid #e5e5e5;
+
+  gap: 29px;
+  grid-template-columns: repeat(3, auto);
 
   @media (min-width: 768px) {
     padding: 0;
