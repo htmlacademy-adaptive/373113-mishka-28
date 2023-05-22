@@ -15,7 +15,7 @@
   <body class="body no-js">
       <!-- хедер сверхним меню и логотипом -->
       <header class="header">
-        <!-- Класс navigation- -opened открывает мобильное меню -->
+        <!-- Класс navigation--opened открывает мобильное меню -->
         <nav class="navigation container">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть/Закрыть меню</span>
@@ -78,7 +78,7 @@
             <h1 class="presentation__title title title--main">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
             <ul class="presentation__menu product-list list-reset ">
               <li class="product-list__item product-list__item--interior">
-                <a class="product-list__link" href="#">
+                <a class="product-list__link" href="interior.html">
                   <span>Предметы интерьера</span>
                   <svg aria-hidden="true" focusable="false" width="40" height="62" >
                     <use xlink:href="img/sprite.svg#icon-interior"></use>
@@ -86,7 +86,7 @@
                 </a>
               </li>
               <li class="product-list__item product-list__item--toys">
-                <a class="product-list__link" href="#">
+                <a class="product-list__link" href="toys.html">
                   <span>Детские игрушки</span>
                   <svg aria-hidden="true" focusable="false" width="60" height="60" >
                     <use xlink:href="img/sprite.svg#icon-toys"></use>
@@ -135,7 +135,7 @@
             </div>
             <div class="promo__cost-order">
               <span class="promo__cost">Цена: 990 руб.</span>
-              <button class="promo__button button button-order">Заказать</button>
+              <button class="promo__button button button-order" onclick="document.querySelector('.modal').classList.remove('modal--close');">Заказать</button>
             </div>
           </div>
         </section>
@@ -205,7 +205,7 @@
                 <span class="visually-hidden">Следующий отзыв</span>
               </button>
             </div>
-            <button class="reviews__button button">Написать</button>
+            <button class="reviews__button button" href="add-review.html">Написать</button>
           </div>
         </section>
         <!--    -->
@@ -238,7 +238,7 @@
               </noscript>
 
             </div>
-              <button class="contacts__button button">Напишите нам</button>
+              <button class="contacts__button button" href="feedback.html">Напишите нам</button>
           </div>
         </section>
         <!--  -->
